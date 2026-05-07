@@ -1,5 +1,4 @@
 import React from 'react'
-import comment from '../assets/comments.png'
 
 
 const CardAbout = ({ comment, name, paragraph }) => {

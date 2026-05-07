@@ -10,7 +10,6 @@ import laravel from "../assets/laravel.jpeg"
 import tailwind from "../assets/tailwind.jpeg"
 import spring from "../assets/spring.jpeg"
 import hibernate from "../assets/Hibernate.png"
-import mysql from "../assets/mysql.jpeg"
 import mongodb from "../assets/mongodb.jpeg"
 import mssql from "../assets/mssql.jpeg"
 import node from "../assets/node.jpeg"
@@ -19,7 +18,6 @@ import reactnative from "../assets/reactnative.svg";
 import ios from "../assets/apple.png"
 import android from "../assets/android.png"
 import php from "../assets/php.png"
-import biosoftech from "../assets/biosoftech.png"
 import { useState } from 'react'
 import { aboutus } from "../data/aboutus";
 

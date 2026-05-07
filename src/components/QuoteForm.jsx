@@ -1,20 +1,21 @@
 
-import { useState, useEffect } from "React";
+import { useState } from "react";
 
 const QuoteForm = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        country: "",
-        company: "",
-        messagingApp: "",
-        messangerId: "",
-        feature: "",
-        description: "",
-
-
-    })
+    const [formData, setFormData] = useState(() => {
+        const savedData = localStorage.getItem("quoteForm");
+        return savedData ? JSON.parse(savedData) : {
+            name: "",
+            email: "",
+            phone: "",
+            country: "",
+            company: "",
+            messagingApp: "",
+            messangerId: "",
+            feature: "",
+            description: "",
+        };
+    });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -29,15 +30,6 @@ const QuoteForm = () => {
         localStorage.setItem("quoteForm", JSON.stringify(formData))
         console.log("Saved:", formData);
     };
-
-    useEffect(() => {
-
-        const savedData = localStorage.getItem("quoteForm");
-
-        if (savedData) {
-            setFormData(JSON.parse(savedData));
-        }
-    }, [formData]);
 
 
     return (
