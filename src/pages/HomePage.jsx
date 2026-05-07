@@ -18,15 +18,14 @@ import { useNavigate } from "react-router-dom";
 import Login from "../components/Login";
 import { useState } from "react";
 import DemoForm from "../components/DemoForm";
-import { useSelector } from "react-redux";
+import increasesales from "../assets/increase-sales.jpg";
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const isDarkMode = useSelector((state) => state.theme.isDarkMode);
 
-  const [openForm, setOpenForm] = useState(false);
+  const [activeForm, setActiveForm] = useState(null);
   const closeForm = () => {
-    setOpenForm(false);
+    setActiveForm(null);
   }
 
   const cardData = [
@@ -41,12 +40,12 @@ const HomePage = () => {
       description: "Access your business from anywhere with our cloud-based ERP system & CRM system from any type of device"
     },
     {
-      image: "img3.jpg",
+      image: increasesales,
       heading: "Increase Your Sales",
       description: "Use our advanced CRM tools to increase sales, team productivity and efficiency."
     },
     {
-      image: "img4.jpg",
+      image: "",
       heading: "Executive Control",
       description: "Provide access to your team as per their Responsibilities"
     }
@@ -120,43 +119,43 @@ const HomePage = () => {
     }
   ];
   return (
-    <div className={`w-full overflow-x-hidden no-scrollbar transition-colors duration-300 ${isDarkMode ? 'mesh-gradient-dark text-white' : 'mesh-gradient-light text-gray-900'}`}>
+    <div className="w-full overflow-x-hidden bg-white text-gray-900">
 
       {/* FIXED HEADER */}
-      <div className="fixed w-full top-0 z-50 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 transition-colors duration-300">
+      <div className="fixed w-full top-0 z-50 border-b border-gray-200 bg-white">
         <Header1 />
         <Header />
       </div>
 
       {/* HERO SECTION */}
-      <div className="pt-[140px] min-h-[60vh] flex flex-col items-center justify-center text-center px-4 md:px-8">
+      <div className="pt-[140px] md:pt-[180px] lg:pt-[200px] min-h-[60vh] flex flex-col items-center justify-center text-center px-4 md:px-8">
         <h1
           style={{ fontFamily: "Dancing Script" }}
-          className="text-5xl md:text-7xl lg:text-8xl leading-[1.4] font-bold bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.2] md:leading-[1.4] font-bold bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent"
         >
           All in One Billing Solutions
         </h1>
 
         <h2
           style={{ fontFamily: "Dancing Script" }}
-          className="text-3xl md:text-4xl lg:text-5xl text-blue-600 dark:text-blue-400 mt-8"
+          className="text-2xl md:text-4xl lg:text-5xl text-blue-600 mt-6 md:mt-8"
         >
           Easy, Efficient & Cost-effective
         </h2>
 
-        <div className="flex gap-4 mt-8 flex-wrap justify-center">
-          <button onClick={() => setOpenForm(true)} className="bg-blue-900 dark:bg-blue-700 text-white px-6 py-2 rounded-md shadow-md text-sm md:text-base hover:bg-blue-800 transition-colors">
+        <div className="flex gap-4 mt-8 flex-wrap justify-center px-4">
+          <button onClick={() => setActiveForm('login')} className="flex-1 sm:flex-none bg-blue-900 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-blue-800 transition-colors">
             Sign Up - It's Free
           </button>
-          <button onClick={() => setOpenForm(true)} className="bg-green-500 dark:bg-green-600 text-white px-6 py-2 rounded-md shadow-md text-sm md:text-base hover:bg-green-600 transition-colors">
+          <button onClick={() => setActiveForm('demo')} className="flex-1 sm:flex-none bg-green-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-green-600 transition-colors">
             Request For Demo
           </button>
-          <button onClick={() => navigate("video")} className="bg-gray-700 dark:bg-gray-600 text-white px-6 py-2 rounded-md shadow-md text-sm md:text-base hover:bg-gray-800 transition-colors">
+          <button onClick={() => navigate("video")} className="w-full sm:w-auto bg-gray-700 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-gray-800 transition-colors">
             Video Demonstration
           </button>
         </div>
 
-        <div className="flex flex-wrap justify-center text-gray-800 dark:text-gray-200 gap-4 md:gap-6 mt-8 text-xs md:text-sm font-semibold tracking-wide">
+        <div className="flex flex-wrap justify-center text-gray-800 gap-3 md:gap-6 mt-10 text-[10px] sm:text-xs md:text-sm font-bold tracking-wide">
           <span>✓ BILLING & ACCOUNTING (ERP)</span>
           <span>✓ INVENTORY MANAGEMENT</span>
           <span>✓ CRM & HRM</span>
@@ -164,20 +163,22 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="w-full px-4 mt-12">
-        <div className="text-xl md:text-2xl text-center text-gray-800 dark:text-gray-200">HOW CAN I HELP YOU </div>
+      <div className="w-full px-4 mt-16 md:mt-24">
+        <div className="text-lg md:text-2xl text-center text-gray-800 font-medium mb-2">HOW CAN I HELP YOU </div>
 
-        <div className="text-3xl md:text-5xl text-center font-bold">We Help You in Your <span className=" bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">Billing </span> Process </div>
+        <div className="text-3xl md:text-5xl lg:text-6xl text-center font-black leading-tight">
+          We Help You in Your <span className=" bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">Billing</span> Process 
+        </div>
       </div>
 
 
       {/* VIDEO + CARDS SECTION */}
-      <div className="w-full min-w-7xl mx-auto p-8 mt-20" >
-        <div className={`w-full flex flex-col lg:flex-row items-center justify-center p-6 md:p-10 rounded-4xl shadow-2xl shadow-amber-600/20 overflow-hidden gap-8 transition-colors duration-300 ${isDarkMode ? 'mesh-gradient-dark' : 'bg-gray-100'}`}>
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="w-full aspect-video min-w-[560px]">
+      <div className="w-full max-w-7xl mx-auto px-4 md:px-8 mt-20" >
+        <div className="w-full flex flex-col lg:flex-row items-stretch justify-center p-4 md:p-10 rounded-3xl md:rounded-[3rem] shadow-2xl shadow-amber-600/10 overflow-hidden gap-8 bg-gray-50 border border-gray-100">
+          <div className="w-full lg:w-1/2 flex justify-center items-center">
+            <div className="w-full aspect-video">
               <iframe
-                className="w-full h-full rounded-xl"
+                className="w-full h-full rounded-2xl shadow-lg"
                 src="https://www.youtube.com/embed/siw7-MTgE4s"
                 title="YouTube video"
                 frameBorder="0"
@@ -194,91 +195,97 @@ const HomePage = () => {
       </div >
 
       {/* QUOTE BANNER */}
-      <div div className="w-full max-w-7xl mx-auto px-4 mt-20 mb-20" >
-        <div className="w-full ext-xl md:text-3xl lg:text-4xl text-center py-8 px-6 rounded-2xl shadow-xl bg-gradient-to-r from-red-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent font-bold leading-tight">
-          The world is moving very fast day by day and we should also take our business forward by using advance software like <span className="">Billing Mitra</span>  “All in One Software Solution”
+      <div className="w-full max-w-5xl mx-auto px-4 mt-20 mb-20" >
+        <div className="w-full text-xl md:text-3xl lg:text-4xl text-center py-10 px-6 rounded-3xl shadow-xl bg-white border border-gray-100 bg-gradient-to-r from-red-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent font-black leading-relaxed">
+          The world is moving very fast day by day and we should also take our business forward by using advance software like <span className="font-black">Billing Mitra</span> “All in One Software Solution”
         </div>
       </div >
 
       {/* SERVICES SECTION */}
-      <div className="p-8" >
-        <div className="w-full p-8 border-2 rounded-2xl pb-4 bg-gradient-to-b from-red-500 via-orange-600 to-yellow-500 text-white">
-          <div className="w-full px-6 mx-auto ">
-            <h1 className="text-4xl md:text-5xl text-center  text-white font-bold mb-10">Our Service</h1>
-            <div className="flex flex-wrap justify-center gap-x-4 gap-y-16">
-              {serviceData.map((card, index) => (
-                <div key={index} className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1rem)] max-w-[400px]">
-                  <Card
-                    index={index}
-                    image={card.image}
-                    heading={card.heading}
-                    description={card.description} />
-                </div>
-              ))}
-            </div>
+      <section className="py-20 md:py-32 px-4 bg-gradient-to-b from-white to-blue-50/30">
+        <div className="max-w-7xl mx-auto shadow-2xl shadow-blue-900/5 gap-8 py-16 md:py-24 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
+          <div className="text-center mb-16">
+            <span className="text-blue-500 font-black uppercase tracking-[0.2em] text-sm block mb-4">What We Offer</span>
+            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6">Our <span className="text-blue-600">Services</span></h2>
+            <div className="h-1.5 w-24 bg-blue-600 mx-auto rounded-full shadow-sm shadow-blue-500/50"></div>
           </div>
-        </div>
-      </div >
 
-      {/* WHY CHOOSE SECTION */}
-      <div className="p-8" >
-        <div className="w-full mx-auto px-4 py-12  bg-gradient-to-r from-red-500 via-orange-600 to-yellow-500  rounded-4xl shadow-2xl" >
-          <h2 className="text-4xl md:text-5xl text-center text-white font-bold mb-10">Why Choose Billing Mitra</h2>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-12">
-            {whyBillingMitra.map((card, index) => (
-              <div key={index} className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] max-w-[400px]">
-                <Card
-                  index={index}
-                  heading={card.heading}
-                  description={card.description} />
-              </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+            {serviceData.map((card, index) => (
+              <Card
+                key={index}
+                index={index}
+                image={card.image}
+                heading={card.heading}
+                description={card.description} />
             ))}
           </div>
-        </div >
-      </div>
+        </div>
+      </section>
 
-      {/* WHO ARE WE SECTION */}
-      <div className="w-full max-w-7xl mx-auto px-4 py-16" >
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Who Are We</h2>
-          <p className="text-xl md:text-2xl dark:opacity-90">Custom IT Solutions for Your Business</p>
-          <div className="flex justify-center gap-2 mt-4">
-            <span className="w-12 h-1.5 bg-blue-600 dark:bg-white rounded-full"></span>
-            <span className="w-12 h-1.5 bg-blue-600 dark:bg-white rounded-full opacity-50"></span>
+      {/* WHY CHOOSE SECTION */}
+      <section className="py-20 md:py-32 px-4 bg-gradient-to-b from-blue-50/30 to-green-50/20">
+        <div className="max-w-7xl mx-auto shadow-2xl shadow-green-900/5 gap-8 py-16 md:py-24 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
+          <div className="text-center mb-16">
+            <span className="text-green-600 font-black uppercase tracking-[0.2em] text-sm block mb-4">Strategic Advantage</span>
+            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6">Why Choose <span className="text-green-600">Billing Mitra</span></h2>
+            <div className="h-1.5 w-24 bg-green-600 mx-auto rounded-full shadow-sm shadow-green-500/50"></div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+            {whyBillingMitra.map((card, index) => (
+              <Card
+                key={index}
+                index={index}
+                heading={card.heading}
+                description={card.description} />
+            ))}
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-          <div className="flex flex-col items-center p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300 min-h-[250px] justify-center">
-            <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-6">
-               <RiEdit2Line size={32} className="text-blue-600 dark:text-blue-400" />
-            </div>
-            <h1 className="text-xl font-bold text-gray-900 dark:text-white">Understand Your Requirement</h1>
+      </section>
+
+      {/* WHO ARE WE SECTION */}
+      <div className="w-full max-w-7xl mx-auto px-4 py-24" >
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl font-black mb-6 text-gray-900">Who Are We</h2>
+          <p className="text-xl md:text-3xl text-gray-600 font-medium">Custom IT Solutions for Your Business</p>
+          <div className="flex justify-center gap-2 mt-8">
+            <span className="w-16 h-2 bg-blue-600 rounded-full"></span>
+            <span className="w-16 h-2 bg-blue-600 rounded-full opacity-20"></span>
           </div>
-          <div className="flex flex-col items-center p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300 min-h-[250px] justify-center">
-            <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-6 overflow-hidden p-3">
-              <img src={chat} alt="Chat" className="w-full h-full object-contain filter dark:invert" />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+          <div className="flex flex-col items-center p-10 bg-gray-50 rounded-[2.5rem] shadow-xl shadow-gray-200/50 hover:shadow-2xl transition-all duration-300 min-h-[300px] justify-center border border-white">
+            <div className="w-20 h-20 bg-blue-100 rounded-3xl flex items-center justify-center mb-8">
+              <RiEdit2Line size={40} className="text-blue-600" />
             </div>
-            <h1 className="text-xl font-bold text-gray-900 dark:text-white">Modify Software As per Need</h1>
+            <h1 className="text-2xl font-black text-gray-900 text-center">Understand Your Requirement</h1>
           </div>
-          <div className="flex flex-col items-center p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300 min-h-[250px] justify-center">
-            <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-6">
-              <span className="text-3xl font-bold text-blue-600 dark:text-blue-400">3</span>
+          <div className="flex flex-col items-center p-10 bg-gray-50 rounded-[2.5rem] shadow-xl shadow-gray-200/50 hover:shadow-2xl transition-all duration-300 min-h-[300px] justify-center border border-white">
+            <div className="w-20 h-20 bg-blue-100 rounded-3xl flex items-center justify-center mb-8 overflow-hidden p-4">
+              <img src={chat} alt="Chat" className="w-full h-full object-contain" />
             </div>
-            <h1 className="text-xl font-bold text-gray-900 dark:text-white">Deliver Complete Solution</h1>
+            <h1 className="text-2xl font-black text-gray-900 text-center">Modify Software As per Need</h1>
+          </div>
+          <div className="flex flex-col items-center p-10 bg-gray-50 rounded-[2.5rem] shadow-xl shadow-gray-200/50 hover:shadow-2xl transition-all duration-300 min-h-[300px] justify-center border border-white">
+            <div className="w-20 h-20 bg-blue-100 rounded-3xl flex items-center justify-center mb-8">
+              <span className="text-4xl font-black text-blue-600">3</span>
+            </div>
+            <h1 className="text-2xl font-black text-gray-900 text-center">Deliver Complete Solution</h1>
           </div>
         </div>
       </div >
-      <div className="px-11">
+      <div className="px-4 md:px-8 max-w-7xl mx-auto mb-20">
         <QuoteForm />
       </div>
       <Footer />
       {
-        openForm && (
+        activeForm === 'demo' && (
           <DemoForm onClose={closeForm} />
         )
       }
       {
-        openForm && (
+        activeForm === 'login' && (
           <Login onClose={closeForm} />
         )
       }

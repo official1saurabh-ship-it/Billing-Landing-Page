@@ -5,10 +5,7 @@ import Header from "../components/Header";
 import Header1 from "../components/Header1";
 import Footer from "../components/Footer";
 
-import { useSelector } from "react-redux";
-
 const VideoPage = () => {
-    const isDarkMode = useSelector((state) => state.theme.isDarkMode);
     const [search, setSearch] = useState("");
 
     const [filters, setFilters] = useState({
@@ -36,91 +33,91 @@ const VideoPage = () => {
         return matchLanguage && matchSearch;
     });
     return (
-        <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'mesh-gradient-dark text-white' : 'mesh-gradient-light text-gray-900'} `}>
+        <div className="min-h-screen transition-colors duration-300 mesh-gradient-light text-gray-900 overflow-x-hidden">
 
-            <div className="fixed w-full top-0 z-50 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 transition-colors duration-300">
+            <div className="fixed w-full top-0 z-50 border-b border-gray-200 bg-white shadow-sm transition-colors duration-300">
                 <Header1 />
                 <Header />
             </div>
-            {/* 🔥 HEADER */}
-            <div className="pt-48">
-                <h1 className="text-3xl font-bold  text-center">
-                    Video Library 🎥
+            {/* HEADER */}
+            <div className="pt-[160px] md:pt-[240px] pb-20 px-4 md:px-8">
+                <h1 className="text-4xl md:text-7xl font-black text-center mb-8 md:mb-12 leading-tight">
+                    Video <span className="text-blue-600">Library</span> 🎥
                 </h1>
 
-                {/* 🔍 SEARCH */}
-                <div className="flex justify-center mb-6 mt-3">
+                {/* SEARCH */}
+                <div className="flex justify-center mb-6 md:mb-10">
                     <input
                         type="text"
                         placeholder="Search videos..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        className="px-4 py-2 rounded-md w-[300px] 
-             bg-white dark:bg-gray-700 text-black dark:text-white 
-             border border-gray-400 dark:border-gray-600 
-             outline-none 
-             focus:ring-2 focus:ring-blue-500 
-             focus:border-blue-500 transition-colors"
+                        className="px-6 py-4 md:py-5 rounded-2xl w-full max-w-lg 
+             bg-white text-gray-900 font-bold
+             border border-gray-100 shadow-xl shadow-gray-200/50
+             outline-none
+             focus:ring-2 focus:ring-blue-500 transition-all text-sm md:text-base"
                     />
                 </div>
 
-                {/* 🎯 FILTERS */}
-                <div className="flex justify-center gap-6 mb-8">
-
-                    <label className="flex items-center gap-2 cursor-pointer">
+                {/* FILTERS */}
+                <div className="flex justify-center gap-6 md:gap-10 mb-12 md:mb-16 flex-wrap">
+                    <label className="flex items-center gap-3 cursor-pointer group">
                         <input
                             type="checkbox"
+                            className="w-5 h-5 md:w-6 md:h-6 rounded border-gray-200 text-blue-600 focus:ring-blue-500"
                             onChange={() => handleFilterChange("english")}
                         />
-                        English
+                        <span className="font-black text-gray-700 group-hover:text-blue-600 transition-colors text-sm md:text-lg">English</span>
                     </label>
 
-                    <label className="flex items-center gap-2 cursor-pointer">
+                    <label className="flex items-center gap-3 cursor-pointer group">
                         <input
                             type="checkbox"
+                            className="w-5 h-5 md:w-6 md:h-6 rounded border-gray-200 text-blue-600 focus:ring-blue-500"
                             onChange={() => handleFilterChange("hindi")}
                         />
-                        Hindi
+                        <span className="font-black text-gray-700 group-hover:text-blue-600 transition-colors text-sm md:text-lg">Hindi</span>
                     </label>
-
                 </div>
 
-                {/* 🎥 VIDEO GRID */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-6">
-
+                {/* VIDEO GRID */}
+                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                     {filteredVideos.map((video) => (
                         <div
                             key={video.id}
-                            className="bg-white dark:bg-gray-800 p-3 rounded-lg hover:scale-105 transition shadow-md dark:shadow-none"
+                            className="bg-white p-4 md:p-6 rounded-[2rem] md:rounded-[2.5rem] border border-gray-50 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-gray-200/50 hover:shadow-2xl"
                         >
+                            <div className="aspect-video mb-6 rounded-2xl overflow-hidden shadow-inner bg-gray-100">
+                                <iframe
+                                    className="w-full h-full"
+                                    src={video.url}
+                                    title={video.title}
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
 
-                            <iframe
-                                className="w-full h-40 rounded-md"
-                                src={video.url}
-                                title={video.title}
-                                allowFullScreen
-                            ></iframe>
+                            <p className="text-lg md:text-2xl font-black text-gray-900 mb-3 leading-tight">{video.title}</p>
 
-                            <p className="mt-2 font-semibold text-gray-900 dark:text-white">{video.title}</p>
-
-                            <span className="text-sm text-gray-500 dark:text-gray-400">
+                            <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 text-[10px] md:text-xs font-black uppercase tracking-widest rounded-full">
                                 {video.language}
                             </span>
-
                         </div>
                     ))}
-
                 </div>
 
-                {/* ❌ NO RESULT */}
+                {/* NO RESULT */}
                 {filteredVideos.length === 0 && (
-                    <p className="text-center mt-10 text-gray-400">
-                        No videos found 😢
-                    </p>
+                    <div className="text-center mt-20 md:mt-32">
+                        <span className="text-6xl mb-4 block">😢</span>
+                        <p className="text-gray-400 text-lg md:text-2xl font-bold">
+                            No videos found matching your search
+                        </p>
+                    </div>
                 )}
             </div>
             <Footer />
         </div>
     );
 };
-export default VideoPage
+export default VideoPage;

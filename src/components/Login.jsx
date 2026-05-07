@@ -31,67 +31,67 @@ const Login = ({ onClose }) => {
 
                 <div className="flex flex-col items-center text-white p-6 md:p-10">
                     {/* Heading */}
-                    <h1 className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 bg-clip-text text-transparent text-3xl md:text-4xl text-center font-bold">
+                    <h1 className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 bg-clip-text text-transparent text-2xl md:text-4xl text-center font-black leading-tight">
                         Create an Account (Free)
                     </h1>
 
-                    <p className="font-medium mt-2 text-center text-white/80">
+                    <p className="font-bold mt-2 text-center text-white/80 text-sm md:text-base">
                         We Maintain Your Data Privacy, 100% safe & secure
                     </p>
 
                     {/* Form */}
                     <div className="mt-8 flex flex-col gap-5 w-full">
-                        <h3 className="text-center font-semibold text-lg">No Payment Required</h3>
+                        <h3 className="text-center font-black text-base md:text-lg opacity-90 uppercase tracking-widest">No Payment Required</h3>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {/* Company Name */}
                             <div className="flex flex-col gap-1.5">
-                                <p className="ml-1 text-sm font-medium">Company Name</p>
+                                <p className="ml-1 text-[10px] md:text-xs font-black uppercase tracking-wider opacity-60">Company Name</p>
                                 <div className="flex items-center gap-3 border border-white/20 rounded-full px-4 py-2.5 bg-white/10 backdrop-blur-md focus-within:border-white transition">
-                                    <RiProfileFill className="text-white/60" size={20} />
+                                    <RiProfileFill className="text-white/40" size={18} />
                                     <input
                                         type="text"
                                         placeholder="Company Name"
-                                        className="bg-transparent outline-none text-white placeholder-white/40 w-full text-sm"
+                                        className="bg-transparent outline-none text-white placeholder-white/30 w-full text-sm font-bold"
                                     />
                                 </div>
                             </div>
 
                             {/* Email */}
                             <div className="flex flex-col gap-1.5">
-                                <p className="ml-1 text-sm font-medium">Email Address</p>
+                                <p className="ml-1 text-[10px] md:text-xs font-black uppercase tracking-wider opacity-60">Email Address</p>
                                 <div className="flex items-center gap-3 border border-white/20 rounded-full px-4 py-2.5 bg-white/10 backdrop-blur-md focus-within:border-white transition">
-                                    <RiMailLine className="text-white/60" size={20} />
+                                    <RiMailLine className="text-white/40" size={18} />
                                     <input
                                         type="email"
                                         placeholder="E-mail"
-                                        className="bg-transparent outline-none text-white placeholder-white/40 w-full text-sm"
+                                        className="bg-transparent outline-none text-white placeholder-white/30 w-full text-sm font-bold"
                                     />
                                 </div>
                             </div>
 
                             {/* Contact */}
                             <div className="flex flex-col gap-1.5">
-                                <p className="ml-1 text-sm font-medium">Contact No.</p>
+                                <p className="ml-1 text-[10px] md:text-xs font-black uppercase tracking-wider opacity-60">Contact No.</p>
                                 <div className="flex items-center gap-3 border border-white/20 rounded-full px-4 py-2.5 bg-white/10 backdrop-blur-md focus-within:border-white transition">
-                                    <RiPhoneLine className="text-white/60" size={20} />
+                                    <RiPhoneLine className="text-white/40" size={18} />
                                     <input
                                         type="text"
                                         placeholder="Contact No."
-                                        className="bg-transparent outline-none text-white placeholder-white/40 w-full text-sm"
+                                        className="bg-transparent outline-none text-white placeholder-white/30 w-full text-sm font-bold"
                                     />
                                 </div>
                             </div>
 
                             {/* Location */}
                             <div className="flex flex-col gap-1.5">
-                                <p className="ml-1 text-sm font-medium">Location</p>
+                                <p className="ml-1 text-[10px] md:text-xs font-black uppercase tracking-wider opacity-60">Location</p>
                                 <div className="flex items-center gap-3 border border-white/20 rounded-full px-4 py-2.5 bg-white/10 backdrop-blur-md focus-within:border-white transition">
-                                    <RiMapPinLine className="text-white/60" size={20} />
+                                    <RiMapPinLine className="text-white/40" size={18} />
                                     <input
                                         type="text"
                                         placeholder="Enter Your Location"
-                                        className="bg-transparent outline-none text-white placeholder-white/40 w-full text-sm"
+                                        className="bg-transparent outline-none text-white placeholder-white/30 w-full text-sm font-bold"
                                     />
                                 </div>
                             </div>
@@ -99,26 +99,26 @@ const Login = ({ onClose }) => {
 
                         {/* Reseller/Other */}
                         <div className="flex flex-col gap-1.5">
-                            <p className="ml-1 text-sm font-medium">Additional Info</p>
+                            <p className="ml-1 text-[10px] md:text-xs font-black uppercase tracking-wider opacity-60">Additional Info</p>
                             <div className="flex items-center gap-3 border border-white/20 rounded-full px-4 py-2.5 bg-white/10 backdrop-blur-md focus-within:border-white transition">
-                                <img src={sitemap} className="w-5 h-5 opacity-60 invert" alt="" />
+                                <img src={sitemap} className="w-5 h-5 opacity-40 invert" alt="" />
                                 <input
                                     type="text"
                                     placeholder="Enter Your Location"
-                                    className="bg-transparent outline-none text-white placeholder-white/40 w-full text-sm"
+                                    className="bg-transparent outline-none text-white placeholder-white/30 w-full text-sm font-bold"
                                 />
                             </div>
                         </div>
 
                         {/* Terms */}
-                        <p className="text-xs text-center text-white/60 mt-2">
+                        <p className="text-[10px] md:text-xs text-center text-white/60 mt-2 font-bold uppercase tracking-widest">
                             I agree to the <span className="underline cursor-pointer hover:text-white transition">Terms and Conditions</span>
                         </p>
 
                         {/* Button */}
                         <button 
                             type="submit" 
-                            className="mt-2 bg-gradient-to-r from-red-500 to-orange-500 py-3 rounded-full font-bold text-lg shadow-lg hover:shadow-orange-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                            className="mt-2 bg-gradient-to-r from-red-500 to-orange-500 py-4 rounded-full font-black text-lg shadow-xl shadow-orange-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all uppercase tracking-widest"
                         >
                             Create Account
                         </button>
