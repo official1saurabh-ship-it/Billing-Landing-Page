@@ -54,15 +54,15 @@ const Footer = () => {
           <div className="flex flex-col gap-4 text-sm text-gray-300">
             <div className="flex gap-3">
               <RiMapPinLine className="text-primary shrink-0" />
-              <span>First floor, H-Block, Anora Kala, Near Goel Tower, Faizabad Road, Lucknow, UP - 226028</span>
+              <span className='text-orange-500'>First floor, H-Block, Anora Kala, Near Goel Tower, Faizabad Road, Lucknow, UP - 226028</span>
             </div>
             <div className="flex items-center gap-3">
               <RiMailLine className="text-primary shrink-0" />
-              <a href="mailto:Info@Biosoftech.com" className="hover:text-primary transition-colors">Info@Biosoftech.com</a>
+              <a href="mailto:Info@Biosoftech.com" className="hover:text-primary transition-colors text-orange-500">Info@Biosoftech.com</a>
             </div>
             <div className="flex items-center gap-3">
               <RiPhoneLine className="text-primary shrink-0" />
-              <a href="tel:+916209688930" className="hover:text-primary transition-colors">+91 6209688930</a>
+              <a href="tel:+916209688930" className="hover:text-primary transition-colors text-orange-500">+91 6209688930</a>
             </div>
           </div>
           <div className="flex gap-4 mt-2">
