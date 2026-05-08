@@ -134,7 +134,7 @@ const HomePage = () => {
     <div className="w-full overflow-x-hidden bg-white text-gray-900">
 
       {/* FIXED HEADER */}
-      <div className="fixed w-full top-0 z-50 border-b border-gray-200 bg-white">
+      <div className="fixed w-full top-0 left-0 z-50 border-b border-gray-200 bg-white">
         <Header1 />
         <Header />
       </div>

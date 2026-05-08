@@ -104,7 +104,7 @@ const Features = () => {
 
     return (
         <div className="flex flex-col min-h-screen bg-white text-gray-900 overflow-x-hidden">
-            <div className="fixed w-full top-0 z-50 bg-white shadow-sm border-b border-gray-100">
+            <div className="fixed w-full top-0 left-0 z-50 bg-white shadow-sm border-b border-gray-100">
                 <Header1 />
                 <Header />
             </div>

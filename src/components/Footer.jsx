@@ -18,7 +18,7 @@ const Footer = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Features', path: '/features' },
     { name: 'Pricing', path: '/pricing' },
-    { name: 'Reference', path: '/reference' },
+
     { name: 'Video Demo', path: '/video' },
     { name: 'Contact Us', path: '/contact' },
   ];
@@ -29,7 +29,7 @@ const Footer = () => {
 
         {/* Column 1: Newsletter */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-black text-xl font-bold border-b-2 border-primary w-fit pb-1">Newsletter</h3>
+          <h3 className="text-orange-500 text-xl font-bold border-b-2 border-primary w-fit pb-1">Newsletter</h3>
           <p className="text-sm leading-relaxed">
             Stay updated with our latest insights and digital transformation strategies. Join our community of innovators.
           </p>
@@ -39,7 +39,7 @@ const Footer = () => {
               placeholder="Your Email Address"
               className="w-full bg-[#f9f9f9] border border-gray-200 rounded-full py-3 px-5 focus:outline-none focus:border-primary text-sm transition-colors text-black"
             />
-            <button className="absolute right-1 top-1/2 -translate-y-1/2 bg-primary hover:bg-orange-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all">
+            <button className="absolute right-1 top-1/2 -translate-y-1/2 bg-orange-400 hover:bg-orange-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all">
               Sign Up
             </button>
           </div>
@@ -47,7 +47,7 @@ const Footer = () => {
 
         {/* Column 2: Explore */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-black text-xl font-bold border-b-2 border-primary w-fit pb-1">Explore</h3>
+          <h3 className="text-orange-500 text-xl font-bold border-b-2 border-primary w-fit pb-1">Explore</h3>
           <ul className="flex flex-col gap-3">
             {exploreLinks.map((item) => (
               <li key={item.name}>
@@ -62,7 +62,7 @@ const Footer = () => {
 
         {/* Column 3: Contact Info */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-black text-xl font-bold border-b-2 border-primary w-fit pb-1">Contact Info</h3>
+          <h3 className="text-orange-500 text-xl font-bold border-b-2 border-primary w-fit pb-1">Contact Info</h3>
           <div className="flex flex-col gap-4 text-sm text-gray-700">
             <div className="flex gap-3">
               <RiMapPinLine className="text-primary shrink-0" />
@@ -78,24 +78,24 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex gap-4 mt-2">
-            <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-all text-gray-600">
+            <a href="https://www.facebook.com/billingmitra" className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-orange-500 transition-all text-gray-600">
               <RiFacebookBoxLine size={20} />
             </a>
-            <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-all text-gray-600">
+            <a href="https://www.instagram.com/billingmitra/" className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-orange-500 transition-all text-gray-600">
               <RiInstagramLine size={20} />
             </a>
-            <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-all text-gray-600">
+            <a href="https://www.linkedin.com/company/billing-mitra" className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-orange-500 transition-all text-gray-600">
               <RiLinkedinLine size={20} />
             </a>
-            <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-all text-gray-600">
-              <RiTwitterFill size={20} />
-            </a>
+            {/* <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-orange-500 transition-all text-gray-600"> */}
+            {/* <RiTwitterFill size={20} /> */}
+            {/* </a> */}
           </div>
         </div>
 
         {/* Column 4: Popular Post */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-black text-xl font-bold border-b-2 border-primary w-fit pb-1">Popular Post</h3>
+          <h3 className="text-orange-500 text-xl font-bold border-b-2 border-primary w-fit pb-1">Popular Post</h3>
           <div className="flex flex-col gap-4">
             <div className="group cursor-pointer">
               <span className="text-primary text-xs font-bold uppercase tracking-wider">Investment</span>
@@ -105,9 +105,7 @@ const Footer = () => {
               <span className="text-primary text-xs font-bold uppercase tracking-wider">Business</span>
               <p className="text-sm mt-1 group-hover:text-primary transition-colors">Why Agile Methodology is Crucial for Modern Enterprises</p>
             </div>
-            <button className="mt-2 bg-transparent border border-orange-500 text-primary hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium transition-all self-start">
-              View All Blogs
-            </button>
+
           </div>
         </div>
       </div>
@@ -118,7 +116,7 @@ const Footer = () => {
           © 2026 BioSoftech. All rights reserved.
         </p>
         <div className="flex gap-6">
-          <Link to="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
+          <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
           <span className="text-gray-500">Designed By BioSoftech Team</span>
         </div>
       </div>

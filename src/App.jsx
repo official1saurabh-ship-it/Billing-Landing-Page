@@ -6,9 +6,10 @@ import AboutUsPage from "./pages/AboutUsPage";
 import FeaturesPage from "./pages/FeaturesPage";
 import Pricing from "./pages/Pricing";
 import ContactPage from "./pages/ContactPage";
-import ReferenceWebsite from "./pages/ReferenceWebsite";
+
 import Login from "./components/Login";
 import ScrollToTop from "./components/ScrollToTop";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 
 const App = () => {
   return (
@@ -23,7 +24,8 @@ const App = () => {
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/reference" element={<ReferenceWebsite />} />
+        <Route path="/privacy" element={<PrivacyPolicyPage />} />
+
       </Routes>
     </div>
   );

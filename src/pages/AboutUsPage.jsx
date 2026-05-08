@@ -122,7 +122,7 @@ const AboutUsPage = () => {
 
     return (
         <div className="min-h-screen bg-white text-gray-900 overflow-x-hidden">
-            <div className='fixed w-full top-0 z-50'>
+            <div className='fixed w-full top-0 left-0 z-50'>
                 <Header1 />
                 <Header />
             </div>

@@ -35,7 +35,7 @@ const VideoPage = () => {
     return (
         <div className="min-h-screen transition-colors duration-300 mesh-gradient-light text-gray-900 overflow-x-hidden">
 
-            <div className="fixed w-full top-0 z-50 border-b border-gray-200 bg-white shadow-sm transition-colors duration-300">
+            <div className="fixed w-full top-0 left-0 z-50 border-b border-gray-200 bg-white shadow-sm transition-colors duration-300">
                 <Header1 />
                 <Header />
             </div>
