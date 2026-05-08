@@ -14,6 +14,7 @@ import {
 const Footer = () => {
   const exploreLinks = [
     { name: 'Home', path: '/' },
+    { name: 'Services', path: '/#services' },
     { name: 'About Us', path: '/about' },
     { name: 'Features', path: '/features' },
     { name: 'Pricing', path: '/pricing' },

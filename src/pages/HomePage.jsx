@@ -14,19 +14,31 @@ import { RiEdit2Line } from "@remixicon/react";
 import QuoteForm from "../components/QuoteForm";
 
 import chat from "../assets/Chat.png"
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import Login from "../components/Login";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DemoForm from "../components/DemoForm";
 import increasesales from "../assets/increase-sales.jpg";
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const { hash } = useLocation();
 
   const [activeForm, setActiveForm] = useState(null);
   const closeForm = () => {
     setActiveForm(null);
   }
+
+  useEffect(() => {
+    if (hash === '#services') {
+      const element = document.getElementById('services');
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [hash]);
 
   const cardData = [
     {
@@ -202,7 +214,7 @@ const HomePage = () => {
       </div >
 
       {/* SERVICES SECTION */}
-      <section className="pb-6 md:pb-8 pt-6 md:pt-8 px-4 bg-gradient-to-b from-white to-orange-50/30">
+      <section id="services" className="pb-6 md:pb-8 pt-6 md:pt-8 px-4 bg-gradient-to-b from-white to-orange-50/30">
         <div className=" mx-auto shadow-2xl shadow-orange-900/5 gap-8 py-10 md:py-16 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
           <div className="text-center mb-16">
             <span className="text-primary font-black uppercase tracking-[0.2em] text-sm block mb-4">What We Offer</span>
