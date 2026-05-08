@@ -5,8 +5,8 @@ const Card1 = ({ image, heading, description, index }) => {
         {
             bg: "bg-orange-50",
             border: "border-orange-100",
-            text: "text-primary",
-            accent: "bg-primary"
+            text: "text-orange-600",
+            accent: "bg-orange-600"
         },
         {
             bg: "bg-amber-50",
@@ -41,7 +41,7 @@ const Card1 = ({ image, heading, description, index }) => {
                 )}
                 <div className='font-black text-xl md:text-2xl text-orange-500 leading-tight'> {heading}</div>
             </div>
-            <p className='text-sm md:text-lg text-gray-600 font-bold leading-relaxed opacity-80'>{description}</p>
+            <p className='text-sm md:text-lg text-gray-900 font-bold leading-relaxed opacity-80'>{description}</p>
             <div className={`h-1.5 w-12 ${color.accent} mt-6 rounded-full opacity-30`}></div>
         </div>
     )

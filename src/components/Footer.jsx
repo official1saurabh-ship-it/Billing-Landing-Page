@@ -29,7 +29,7 @@ const Footer = () => {
 
         {/* Column 1: Newsletter */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-orange-500 text-xl font-bold border-b-2 border-primary w-fit pb-1">Newsletter</h3>
+          <h3 className="text-black text-xl font-bold border-b-2 border-primary w-fit pb-1">Newsletter</h3>
           <p className="text-sm leading-relaxed">
             Stay updated with our latest insights and digital transformation strategies. Join our community of innovators.
           </p>
@@ -47,7 +47,7 @@ const Footer = () => {
 
         {/* Column 2: Explore */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-orange-500 text-xl font-bold border-b-2 border-primary w-fit pb-1">Explore</h3>
+          <h3 className="text-black text-xl font-bold border-b-2 border-primary w-fit pb-1">Explore</h3>
           <ul className="flex flex-col gap-3">
             {exploreLinks.map((item) => (
               <li key={item.name}>
@@ -62,7 +62,7 @@ const Footer = () => {
 
         {/* Column 3: Contact Info */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-orange-500 text-xl font-bold border-b-2 border-primary w-fit pb-1">Contact Info</h3>
+          <h3 className="text-black text-xl font-bold border-b-2 border-primary w-fit pb-1">Contact Info</h3>
           <div className="flex flex-col gap-4 text-sm text-gray-700">
             <div className="flex gap-3">
               <RiMapPinLine className="text-primary shrink-0" />
@@ -95,7 +95,7 @@ const Footer = () => {
 
         {/* Column 4: Popular Post */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-orange-500 text-xl font-bold border-b-2 border-primary w-fit pb-1">Popular Post</h3>
+          <h3 className="text-black text-xl font-bold border-b-2 border-primary w-fit pb-1">Popular Post</h3>
           <div className="flex flex-col gap-4">
             <div className="group cursor-pointer">
               <span className="text-primary text-xs font-bold uppercase tracking-wider">Investment</span>

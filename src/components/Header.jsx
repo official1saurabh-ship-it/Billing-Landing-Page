@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "@remixicon/react";
-import biosoftech from "../assets/biosoftech.png";
+import biosoftech from "../assets/billinglogo.jpeg";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ const Header = () => {
           <img
             src={biosoftech}
             alt="Biosoftech Logo"
-            className="h-10 md:h-14 lg:h-16 w-auto"
+            className="h-20 md:h-14 lg:h-16 w-40"
           />
         </Link>
 
