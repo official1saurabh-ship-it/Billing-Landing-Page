@@ -195,15 +195,15 @@ const HomePage = () => {
       </div >
 
       {/* QUOTE BANNER */}
-      <div className="w-full  mx-auto px-4 mt-20 mb-10" >
+      <div className="w-full  mx-auto px-4 mt-12 mb-2" >
         <div className="w-full text-xl md:text-3xl lg:text-4xl text-center py-10 px-6 rounded-3xl shadow-xl bg-white border border-gray-100 bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 bg-clip-text text-transparent font-black leading-relaxed">
           The world is moving very fast day by day and we should also take our business forward by using advance software like <span className="text-black">Billing Mitra</span> “All in One Software Solution”
         </div>
       </div >
 
       {/* SERVICES SECTION */}
-      <section className="py-20 md:py-32 px-4 bg-gradient-to-b from-white to-orange-50/30">
-        <div className=" mx-auto shadow-2xl shadow-orange-900/5 gap-8 py-16 md:py-24 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
+      <section className="pb-6 md:pb-8 pt-6 md:pt-8 px-4 bg-gradient-to-b from-white to-orange-50/30">
+        <div className=" mx-auto shadow-2xl shadow-orange-900/5 gap-8 py-10 md:py-16 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
           <div className="text-center mb-16">
             <span className="text-primary font-black uppercase tracking-[0.2em] text-sm block mb-4">What We Offer</span>
             <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6">Our <span className="text-orange-500">Services</span></h2>
@@ -224,8 +224,8 @@ const HomePage = () => {
       </section>
 
       {/* WHY CHOOSE SECTION */}
-      <section className="py-10 md:py-32 px-4 bg-gradient-to-b from-orange-50/30 to-amber-50/20">
-        <div className=" mx-auto shadow-2xl shadow-orange-900/5 gap-8 py-16 md:py-24 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
+      <section className="pb-12 md:pb-20 pt-6 md:pt-8 px-4 bg-gradient-to-b from-orange-50/30 to-amber-50/20">
+        <div className=" mx-auto shadow-2xl shadow-orange-900/5 gap-8 py-10 md:py-16 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
           <div className="text-center mb-16">
             <span className="text-primary font-black uppercase tracking-[0.2em] text-sm block mb-4">Strategic Advantage</span>
             <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6">Why Choose <span className="text-orange-500">Billing </span>Mitra</h2>
@@ -245,7 +245,7 @@ const HomePage = () => {
       </section>
 
       {/* WHO ARE WE SECTION */}
-      <div className="w-full  mx-auto px-4 py-10" >
+      <div className="w-full  mx-auto px-4 py-8" >
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black mb-6 text-gray-900">Who Are We</h2>
           <p className="text-xl md:text-3xl text-orange-500 font-medium">Custom IT Solutions for Your Business</p>
