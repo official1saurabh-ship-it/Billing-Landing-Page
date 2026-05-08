@@ -39,7 +39,7 @@ const TreeItem = ({ item }) => {
                     type="checkbox"
                     checked={checked}
                     onChange={handleCheck}
-                    className="w-4 h-4 accent-orange-500 cursor-pointer"
+                    className="w-4 h-4 accent-primary cursor-pointer"
                     onClick={(e) => e.stopPropagation()}
                 />
                 
@@ -93,7 +93,7 @@ const CheckboxTree = ({ data }) => {
 
             {/* Dropdown Menu */}
             {isOpen && (
-                <div className="absolute top-full left-0 w-full mt-2 bg-[#1e293b] border border-white/20 rounded-2xl shadow-2xl z-[110] p-3 max-h-72 overflow-y-auto custom-scrollbar animate-in fade-in slide-in-from-top-2 duration-200">
+                <div className="absolute top-full left-0 w-full mt-2 bg-amber-950 border border-white/20 rounded-2xl shadow-2xl z-[110] p-3 max-h-72 overflow-y-auto custom-scrollbar animate-in fade-in slide-in-from-top-2 duration-200">
                     <div className="flex flex-col gap-1">
                         {data.map((item, index) => (
                             <TreeItem key={index} item={item} />

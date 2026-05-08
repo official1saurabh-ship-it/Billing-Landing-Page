@@ -3,22 +3,22 @@ import React from 'react'
 const Card1 = ({ image, heading, description, index }) => {
     const colors = [
         {
-            bg: "bg-blue-50",
-            border: "border-blue-100",
-            text: "text-blue-600",
-            accent: "bg-blue-600"
+            bg: "bg-orange-50",
+            border: "border-orange-100",
+            text: "text-primary",
+            accent: "bg-primary"
         },
         {
-            bg: "bg-green-50",
-            border: "border-green-100",
-            text: "text-green-600",
-            accent: "bg-green-600"
+            bg: "bg-amber-50",
+            border: "border-amber-100",
+            text: "text-amber-600",
+            accent: "bg-amber-600"
         },
         {
-            bg: "bg-purple-50",
-            border: "border-purple-100",
-            text: "text-purple-600",
-            accent: "bg-purple-600"
+            bg: "bg-yellow-50",
+            border: "border-yellow-100",
+            text: "text-yellow-600",
+            accent: "bg-yellow-600"
         },
     ];
 
@@ -39,7 +39,7 @@ const Card1 = ({ image, heading, description, index }) => {
                         )}
                     </div>
                 )}
-                <div className='font-black text-xl md:text-2xl text-gray-900 leading-tight'> {heading}</div>
+                <div className='font-black text-xl md:text-2xl text-orange-500 leading-tight'> {heading}</div>
             </div>
             <p className='text-sm md:text-lg text-gray-600 font-bold leading-relaxed opacity-80'>{description}</p>
             <div className={`h-1.5 w-12 ${color.accent} mt-6 rounded-full opacity-30`}></div>

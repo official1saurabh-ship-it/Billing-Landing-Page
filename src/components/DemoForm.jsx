@@ -27,7 +27,7 @@ const DemoForm = ({ onClose }) => {
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-[100] p-4">
             <form
                 onSubmit={handleSubmit}
-                className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-blue-700 via-indigo-800 to-purple-900 rounded-3xl shadow-2xl custom-scrollbar"
+                className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-orange-700 via-amber-800 to-orange-900 rounded-3xl shadow-2xl custom-scrollbar"
             >
                 <button
                     type="button"
@@ -39,7 +39,7 @@ const DemoForm = ({ onClose }) => {
 
                 <div className="flex flex-col items-center text-white p-6 md:p-10">
                     {/* Heading */}
-                    <h1 className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 bg-clip-text text-transparent text-2xl md:text-4xl text-center font-black leading-tight">
+                    <h1 className="bg-gradient-to-r from-amber-500 via-orange-500 to-orange-400 bg-clip-text text-transparent text-2xl md:text-4xl text-center font-black leading-tight">
                         Request For Demo
                     </h1>
 
@@ -135,7 +135,7 @@ const DemoForm = ({ onClose }) => {
                         {/* Button */}
                         <button
                             type="submit"
-                            className="mt-4 bg-gradient-to-r from-red-500 to-orange-500 py-4 rounded-full font-black text-lg shadow-xl shadow-orange-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all uppercase tracking-widest"
+                            className="mt-4 bg-primary py-4 rounded-full font-black text-lg shadow-xl shadow-orange-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all uppercase tracking-widest"
                         >
                             Submit Request
                         </button>

@@ -3,26 +3,26 @@ import { useState } from "react";
 const Card = ({ image, heading, description, index }) => {
     const colors = [
         {
-            bg: "bg-blue-100",
-            border: "border-blue-500",
-            gradient: "from-blue-500 to-indigo-500",
+            bg: "bg-orange-100",
+            border: "border-primary",
+            gradient: "from-primary to-amber-500",
         },
         {
-            bg: "bg-green-100",
-            border: "border-green-500",
-            gradient: "from-green-500 to-emerald-500",
+            bg: "bg-amber-100",
+            border: "border-amber-500",
+            gradient: "from-amber-500 to-orange-500",
         },
         {
-            bg: "bg-purple-100",
-            border: "border-purple-500",
-            gradient: "from-purple-500 to-pink-500",
+            bg: "bg-yellow-100",
+            border: "border-yellow-500",
+            gradient: "from-yellow-500 to-primary",
         },
     ];
 
     // Ultra-safe color selection
     const safeIndex = typeof index === 'number' ? index : 0;
     const color = colors[safeIndex % colors.length] || colors[0];
-    
+
     const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
     const handleMouseMove = (e) => {
@@ -70,7 +70,7 @@ const Card = ({ image, heading, description, index }) => {
 
                 <div style={{ transform: "translateZ(30px)" }}>
                     <h2
-                        className={`text-xl md:text-3xl font-black inline-block bg-gradient-to-r ${color.gradient} bg-clip-text text-transparent leading-tight`}
+                        className={`text-xl md:text-3xl font-black inline-block text-orange-500 leading-tight`}
                     >
                         {heading}
                     </h2>

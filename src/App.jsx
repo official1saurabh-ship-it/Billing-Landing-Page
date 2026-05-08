@@ -11,7 +11,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen mesh-gradient-light text-gray-900">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />

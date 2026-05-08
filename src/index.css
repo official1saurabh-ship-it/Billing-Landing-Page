@@ -30,8 +30,8 @@ html, body {
 .hero {
   background: linear-gradient(
     135deg,
-    rgba(13, 27, 42, 0.8),
-    rgba(27, 38, 59, 0.8)
+    rgba(255, 133, 16, 0.8),
+    rgba(230, 110, 0, 0.8)
   );
   background-size: cover;
   background-blend-mode: overlay;
@@ -40,14 +40,14 @@ html, body {
 .mesh-gradient-dark {
   background-color: #050505; /* Neutral deep black base */
   background-image: 
-    radial-gradient(at 0% 0%, hsla(260, 60%, 25%, 0.7) 0, transparent 50%), /* Deep Purple */
-    radial-gradient(at 50% 0%, hsla(220, 60%, 25%, 0.7) 0, transparent 50%), /* Midnight Blue */
-    radial-gradient(at 100% 0%, hsla(340, 60%, 20%, 0.6) 0, transparent 50%), /* Ruby Red */
-    radial-gradient(at 100% 50%, hsla(160, 60%, 15%, 0.6) 0, transparent 50%), /* Emerald Green */
-    radial-gradient(at 50% 100%, hsla(280, 60%, 20%, 0.7) 0, transparent 50%), /* Royal Violet */
-    radial-gradient(at 0% 100%, hsla(200, 60%, 20%, 0.6) 0, transparent 50%), /* Ocean Blue */
-    radial-gradient(at 80% 80%, hsla(30, 60%, 15%, 0.5) 0, transparent 40%),  /* Deep Amber */
-    radial-gradient(at 20% 50%, hsla(300, 60%, 20%, 0.5) 0, transparent 50%); /* Fuchsia */
+    radial-gradient(at 0% 0%, hsla(30, 100%, 25%, 0.7) 0, transparent 50%), /* Deep Orange */
+    radial-gradient(at 50% 0%, hsla(25, 100%, 25%, 0.7) 0, transparent 50%), /* Burnt Orange */
+    radial-gradient(at 100% 0%, hsla(35, 100%, 20%, 0.6) 0, transparent 50%), /* Dark Amber */
+    radial-gradient(at 100% 50%, hsla(20, 100%, 15%, 0.6) 0, transparent 50%), /* Deep Rust */
+    radial-gradient(at 50% 100%, hsla(40, 100%, 20%, 0.7) 0, transparent 50%), /* Golden Orange */
+    radial-gradient(at 0% 100%, hsla(32, 100%, 20%, 0.6) 0, transparent 50%), /* Bright Orange */
+    radial-gradient(at 80% 80%, hsla(28, 100%, 15%, 0.5) 0, transparent 40%),  /* Darker Orange */
+    radial-gradient(at 20% 50%, hsla(38, 100%, 20%, 0.5) 0, transparent 50%); /* Amber */
   background-attachment: fixed;
   background-size: cover;
 }
@@ -55,12 +55,12 @@ html, body {
 .mesh-gradient-light {
   background-color: #ffffff;
   background-image: 
-    radial-gradient(at 0% 0%, hsla(260, 60%, 95%, 0.8) 0, transparent 50%),
-    radial-gradient(at 50% 0%, hsla(220, 60%, 95%, 0.8) 0, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(340, 60%, 95%, 0.7) 0, transparent 50%),
-    radial-gradient(at 100% 50%, hsla(160, 60%, 95%, 0.7) 0, transparent 50%),
-    radial-gradient(at 50% 100%, hsla(280, 60%, 95%, 0.8) 0, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(200, 60%, 95%, 0.7) 0, transparent 50%);
+    radial-gradient(at 0% 0%, hsla(30, 100%, 95%, 0.8) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(25, 100%, 95%, 0.8) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(35, 100%, 95%, 0.7) 0, transparent 50%),
+    radial-gradient(at 100% 50%, hsla(20, 100%, 95%, 0.7) 0, transparent 50%),
+    radial-gradient(at 50% 100%, hsla(40, 100%, 95%, 0.8) 0, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(32, 100%, 95%, 0.7) 0, transparent 50%);
   background-attachment: fixed;
   background-size: cover;
 }

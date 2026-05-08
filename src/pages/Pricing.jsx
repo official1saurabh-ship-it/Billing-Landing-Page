@@ -61,8 +61,8 @@ const Pricing = () => {
                 <div className="max-w-7xl mx-auto">
                     {/* Heading */}
                     <div className="text-center mb-16 md:mb-24">
-                        <span className="text-blue-500 font-black uppercase tracking-[0.2em] text-xs md:text-sm block mb-4">Pricing Plans</span>
-                        <h1 className="text-4xl md:text-7xl font-black mb-6 text-gray-900 leading-tight">Choose Your <span className="text-blue-500">Perfect Plan</span></h1>
+                        <span className="text-primary font-black uppercase tracking-[0.2em] text-xs md:text-sm block mb-4">Pricing Plans</span>
+                        <h1 className="text-4xl md:text-7xl font-black mb-6 text-gray-900 leading-tight">Choose Your <span className="text-primary">Perfect Plan</span></h1>
                         <p className="text-lg md:text-2xl opacity-80 max-w-3xl mx-auto leading-relaxed text-gray-600 font-medium">
                             Simple pricing. No hidden charges. Scalable solutions for businesses of all sizes.
                         </p>
@@ -75,14 +75,14 @@ const Pricing = () => {
                                 key={index}
                                 className={`relative rounded-[3rem] p-8 md:p-12 border transition-all duration-500 hover:scale-[1.02] flex flex-col min-h-[600px] md:min-h-[700px]
                                     ${plan.highlight
-                                        ? 'bg-white border-blue-500 shadow-2xl shadow-blue-500/20 z-10 lg:scale-105'
+                                        ? 'bg-white border-primary shadow-2xl shadow-orange-500/20 z-10 lg:scale-105'
                                         : 'bg-white border-gray-100 shadow-xl shadow-gray-200/50'
                                     }`}
                             >
 
                                 {/* Badge */}
                                 {plan.highlight && (
-                                    <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-6 md:px-8 py-2 text-[10px] md:text-sm font-black rounded-full shadow-lg uppercase tracking-widest whitespace-nowrap">
+                                    <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white px-6 md:px-8 py-2 text-[10px] md:text-sm font-black rounded-full shadow-lg uppercase tracking-widest whitespace-nowrap">
                                         Most Popular
                                     </div>
                                 )}
@@ -96,7 +96,7 @@ const Pricing = () => {
                                         {plan.oldPrice}
                                     </span>
                                     <div className="flex items-baseline gap-2 flex-wrap">
-                                        <h3 className="text-4xl md:text-6xl font-black text-green-500">
+                                        <h3 className="text-4xl md:text-6xl font-black text-primary">
                                             {plan.price}
                                         </h3>
                                         <span className="opacity-60 text-base md:text-lg font-bold text-gray-600">/ year</span>
@@ -109,8 +109,8 @@ const Pricing = () => {
                                 <ul className="space-y-4 md:space-y-6 mb-12 flex-grow">
                                     {plan.features.map((feature, i) => (
                                         <li key={i} className="flex items-start gap-4">
-                                            <div className="mt-1 w-6 h-6 md:w-7 md:h-7 rounded-full bg-green-100 flex items-center justify-center shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-green-600"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                            <div className="mt-1 w-6 h-6 md:w-7 md:h-7 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                             </div>
                                             <span className="text-base md:text-lg opacity-90 font-medium text-gray-700">{feature}</span>
                                         </li>
@@ -122,7 +122,7 @@ const Pricing = () => {
                                     onClick={() => window.location.href = '/contact'}
                                     className={`w-full py-4 md:py-5 rounded-2xl md:rounded-3xl font-black text-lg md:text-xl transition-all duration-300 transform hover:translate-y-[-4px] active:scale-95
                                         ${plan.highlight
-                                            ? "bg-blue-600 hover:bg-blue-700 text-white shadow-xl shadow-blue-500/40"
+                                            ? "bg-primary hover:bg-orange-700 text-white shadow-xl shadow-orange-500/40"
                                             : "bg-gray-100 hover:bg-gray-200 text-gray-900"
                                         }`}
                                 >

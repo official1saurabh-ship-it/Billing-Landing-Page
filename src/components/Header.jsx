@@ -38,7 +38,7 @@ const Header = () => {
                 navigate(link.path);
                 setIsMenuOpen(false);
               }}
-              className="font-semibold text-sm lg:text-lg flex items-center bg-gradient-to-r from-red-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent relative cursor-pointer group whitespace-nowrap"
+              className="font-semibold text-sm lg:text-lg flex items-center bg-gradient-to-r from-amber-500 via-orange-600 to-orange-500 bg-clip-text text-transparent relative cursor-pointer group whitespace-nowrap"
             >
               {link.name}
               <span className="absolute left-1/2 bottom-0 h-[2px] w-0 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
@@ -50,7 +50,7 @@ const Header = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="p-2 text-gray-600 hover:text-blue-600 transition-colors"
+            className="p-2 text-gray-600 hover:text-primary transition-colors"
           >
             {isMenuOpen ? <RiCloseLine size={28} /> : <RiMenu3Line size={28} />}
           </button>
@@ -75,7 +75,7 @@ const Header = () => {
                   navigate(link.path);
                   setIsMenuOpen(false);
                 }}
-                className="text-2xl font-bold text-gray-800 hover:text-blue-600 transition-colors py-2 border-b border-gray-100"
+                className="text-2xl font-bold text-gray-800 hover:text-primary transition-colors py-2 border-b border-gray-100"
               >
                 {link.name}
               </div>
@@ -88,7 +88,7 @@ const Header = () => {
                 navigate("/contact");
                 setIsMenuOpen(false);
               }}
-              className="w-full py-4 bg-blue-600 text-white rounded-xl font-bold text-lg shadow-lg shadow-blue-500/30"
+              className="w-full py-4 bg-primary text-white rounded-xl font-bold text-lg shadow-lg shadow-orange-500/30"
             >
               Get Started
             </button>

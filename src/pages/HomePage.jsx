@@ -131,26 +131,26 @@ const HomePage = () => {
       <div className="pt-[140px] md:pt-[180px] lg:pt-[200px] min-h-[60vh] flex flex-col items-center justify-center text-center px-4 md:px-8">
         <h1
           style={{ fontFamily: "Dancing Script" }}
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.2] md:leading-[1.4] font-bold bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent"
+          className="text-7xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.2] md:leading-[1.4] font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-orange-400 bg-clip-text text-transparent"
         >
           All in One Billing Solutions
         </h1>
 
         <h2
           style={{ fontFamily: "Dancing Script" }}
-          className="text-2xl md:text-4xl lg:text-5xl text-blue-600 mt-6 md:mt-8"
+          className="text-2xl md:text-4xl lg:text-5xl text-primary mt-6 md:mt-8"
         >
           Easy, Efficient & Cost-effective
         </h2>
 
         <div className="flex gap-4 mt-8 flex-wrap justify-center px-4">
-          <button onClick={() => setActiveForm('login')} className="flex-1 sm:flex-none bg-blue-900 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-blue-800 transition-colors">
+          <button onClick={() => setActiveForm('login')} className="flex-1 sm:flex-none bg-orange-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-orange-600 transition-colors">
             Sign Up - It's Free
           </button>
-          <button onClick={() => setActiveForm('demo')} className="flex-1 sm:flex-none bg-green-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-green-600 transition-colors">
+          <button onClick={() => setActiveForm('demo')} className="flex-1 sm:flex-none bg-orange-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-orange-600 transition-colors">
             Request For Demo
           </button>
-          <button onClick={() => navigate("video")} className="w-full sm:w-auto bg-gray-700 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-gray-800 transition-colors">
+          <button onClick={() => navigate("video")} className="w-full sm:w-auto bg-orange-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-orange-600 transition-colors">
             Video Demonstration
           </button>
         </div>
@@ -167,14 +167,14 @@ const HomePage = () => {
         <div className="text-lg md:text-2xl text-center text-gray-800 font-medium mb-2">HOW CAN I HELP YOU </div>
 
         <div className="text-3xl md:text-5xl lg:text-6xl text-center font-black leading-tight">
-          We Help You in Your <span className=" bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">Billing</span> Process 
+          We Help You in Your <span className=" bg-gradient-to-r from-amber-500 via-orange-500 to-orange-400 bg-clip-text text-transparent">Billing</span> Process
         </div>
       </div>
 
 
       {/* VIDEO + CARDS SECTION */}
-      <div className="w-full max-w-7xl mx-auto px-4 md:px-8 mt-20" >
-        <div className="w-full flex flex-col lg:flex-row items-stretch justify-center p-4 md:p-10 rounded-3xl md:rounded-[3rem] shadow-2xl shadow-amber-600/10 overflow-hidden gap-8 bg-gray-50 border border-gray-100">
+      <div className="w-full  mx-auto px-4 md:px-8 mt-20" >
+        <div className="w-full flex flex-col lg:flex-row items-stretch justify-center p-4 md:p-10 rounded-3xl md:rounded-[3rem] shadow-2xl shadow-orange-600/10 overflow-hidden gap-8 bg-gray-50 border border-gray-100">
           <div className="w-full lg:w-1/2 flex justify-center items-center">
             <div className="w-full aspect-video">
               <iframe
@@ -195,19 +195,19 @@ const HomePage = () => {
       </div >
 
       {/* QUOTE BANNER */}
-      <div className="w-full max-w-5xl mx-auto px-4 mt-20 mb-20" >
-        <div className="w-full text-xl md:text-3xl lg:text-4xl text-center py-10 px-6 rounded-3xl shadow-xl bg-white border border-gray-100 bg-gradient-to-r from-red-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent font-black leading-relaxed">
-          The world is moving very fast day by day and we should also take our business forward by using advance software like <span className="font-black">Billing Mitra</span> “All in One Software Solution”
+      <div className="w-full  mx-auto px-4 mt-20 mb-10" >
+        <div className="w-full text-xl md:text-3xl lg:text-4xl text-center py-10 px-6 rounded-3xl shadow-xl bg-white border border-gray-100 bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 bg-clip-text text-transparent font-black leading-relaxed">
+          The world is moving very fast day by day and we should also take our business forward by using advance software like <span className="text-black">Billing Mitra</span> “All in One Software Solution”
         </div>
       </div >
 
       {/* SERVICES SECTION */}
-      <section className="py-20 md:py-32 px-4 bg-gradient-to-b from-white to-blue-50/30">
-        <div className="max-w-7xl mx-auto shadow-2xl shadow-blue-900/5 gap-8 py-16 md:py-24 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
+      <section className="py-20 md:py-32 px-4 bg-gradient-to-b from-white to-orange-50/30">
+        <div className=" mx-auto shadow-2xl shadow-orange-900/5 gap-8 py-16 md:py-24 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
           <div className="text-center mb-16">
-            <span className="text-blue-500 font-black uppercase tracking-[0.2em] text-sm block mb-4">What We Offer</span>
-            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6">Our <span className="text-blue-600">Services</span></h2>
-            <div className="h-1.5 w-24 bg-blue-600 mx-auto rounded-full shadow-sm shadow-blue-500/50"></div>
+            <span className="text-primary font-black uppercase tracking-[0.2em] text-sm block mb-4">What We Offer</span>
+            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6">Our <span className="text-orange-500">Services</span></h2>
+            <div className="h-1.5 w-24 bg-primary mx-auto rounded-full shadow-sm shadow-orange-500/50"></div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
@@ -224,12 +224,12 @@ const HomePage = () => {
       </section>
 
       {/* WHY CHOOSE SECTION */}
-      <section className="py-20 md:py-32 px-4 bg-gradient-to-b from-blue-50/30 to-green-50/20">
-        <div className="max-w-7xl mx-auto shadow-2xl shadow-green-900/5 gap-8 py-16 md:py-24 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
+      <section className="py-10 md:py-32 px-4 bg-gradient-to-b from-orange-50/30 to-amber-50/20">
+        <div className=" mx-auto shadow-2xl shadow-orange-900/5 gap-8 py-16 md:py-24 px-4 md:px-12 bg-white rounded-[3rem] border border-gray-100">
           <div className="text-center mb-16">
-            <span className="text-green-600 font-black uppercase tracking-[0.2em] text-sm block mb-4">Strategic Advantage</span>
-            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6">Why Choose <span className="text-green-600">Billing Mitra</span></h2>
-            <div className="h-1.5 w-24 bg-green-600 mx-auto rounded-full shadow-sm shadow-green-500/50"></div>
+            <span className="text-primary font-black uppercase tracking-[0.2em] text-sm block mb-4">Strategic Advantage</span>
+            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6">Why Choose <span className="text-orange-500">Billing </span>Mitra</h2>
+            <div className="h-1.5 w-24 bg-primary mx-auto rounded-full shadow-sm shadow-orange-500/50"></div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
@@ -245,37 +245,37 @@ const HomePage = () => {
       </section>
 
       {/* WHO ARE WE SECTION */}
-      <div className="w-full max-w-7xl mx-auto px-4 py-24" >
+      <div className="w-full  mx-auto px-4 py-10" >
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black mb-6 text-gray-900">Who Are We</h2>
-          <p className="text-xl md:text-3xl text-gray-600 font-medium">Custom IT Solutions for Your Business</p>
+          <p className="text-xl md:text-3xl text-orange-500 font-medium">Custom IT Solutions for Your Business</p>
           <div className="flex justify-center gap-2 mt-8">
-            <span className="w-16 h-2 bg-blue-600 rounded-full"></span>
-            <span className="w-16 h-2 bg-blue-600 rounded-full opacity-20"></span>
+            <span className="w-16 h-2 bg-primary rounded-full"></span>
+            <span className="w-16 h-2 bg-primary rounded-full opacity-20"></span>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           <div className="flex flex-col items-center p-10 bg-gray-50 rounded-[2.5rem] shadow-xl shadow-gray-200/50 hover:shadow-2xl transition-all duration-300 min-h-[300px] justify-center border border-white">
-            <div className="w-20 h-20 bg-blue-100 rounded-3xl flex items-center justify-center mb-8">
-              <RiEdit2Line size={40} className="text-blue-600" />
+            <div className="w-20 h-20 bg-orange-100 rounded-3xl flex items-center justify-center mb-8">
+              <RiEdit2Line size={40} className="text-primary" />
             </div>
-            <h1 className="text-2xl font-black text-gray-900 text-center">Understand Your Requirement</h1>
+            <h1 className="text-2xl font-black text-orange-500 text-center">Understand Your Requirement</h1>
           </div>
           <div className="flex flex-col items-center p-10 bg-gray-50 rounded-[2.5rem] shadow-xl shadow-gray-200/50 hover:shadow-2xl transition-all duration-300 min-h-[300px] justify-center border border-white">
-            <div className="w-20 h-20 bg-blue-100 rounded-3xl flex items-center justify-center mb-8 overflow-hidden p-4">
+            <div className="w-20 h-20 bg-orange-100 rounded-3xl flex items-center justify-center mb-8 overflow-hidden p-4">
               <img src={chat} alt="Chat" className="w-full h-full object-contain" />
             </div>
-            <h1 className="text-2xl font-black text-gray-900 text-center">Modify Software As per Need</h1>
+            <h1 className="text-2xl font-black text-orange-500 text-center">Modify Software As per Need</h1>
           </div>
           <div className="flex flex-col items-center p-10 bg-gray-50 rounded-[2.5rem] shadow-xl shadow-gray-200/50 hover:shadow-2xl transition-all duration-300 min-h-[300px] justify-center border border-white">
-            <div className="w-20 h-20 bg-blue-100 rounded-3xl flex items-center justify-center mb-8">
-              <span className="text-4xl font-black text-blue-600">3</span>
+            <div className="w-20 h-20 bg-orange-100 rounded-3xl flex items-center justify-center mb-8">
+              <span className="text-4xl font-black text-primary">3</span>
             </div>
-            <h1 className="text-2xl font-black text-gray-900 text-center">Deliver Complete Solution</h1>
+            <h1 className="text-2xl font-black text-orange-500 text-center">Deliver Complete Solution</h1>
           </div>
         </div>
       </div >
-      <div className="px-4 md:px-8 max-w-7xl mx-auto mb-20">
+      <div className="px-4 md:px-8  mx-auto mb-20">
         <QuoteForm />
       </div>
       <Footer />

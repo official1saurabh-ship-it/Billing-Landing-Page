@@ -42,7 +42,7 @@ const VideoPage = () => {
             {/* HEADER */}
             <div className="pt-[160px] md:pt-[240px] pb-20 px-4 md:px-8">
                 <h1 className="text-4xl md:text-7xl font-black text-center mb-8 md:mb-12 leading-tight">
-                    Video <span className="text-blue-600">Library</span> 🎥
+                    Video <span className="text-primary">Library</span> 🎥
                 </h1>
 
                 {/* SEARCH */}
@@ -56,7 +56,7 @@ const VideoPage = () => {
              bg-white text-gray-900 font-bold
              border border-gray-100 shadow-xl shadow-gray-200/50
              outline-none
-             focus:ring-2 focus:ring-blue-500 transition-all text-sm md:text-base"
+             focus:ring-2 focus:ring-primary transition-all text-sm md:text-base"
                     />
                 </div>
 
@@ -65,19 +65,19 @@ const VideoPage = () => {
                     <label className="flex items-center gap-3 cursor-pointer group">
                         <input
                             type="checkbox"
-                            className="w-5 h-5 md:w-6 md:h-6 rounded border-gray-200 text-blue-600 focus:ring-blue-500"
+                            className="w-5 h-5 md:w-6 md:h-6 rounded border-gray-200 text-primary focus:ring-primary"
                             onChange={() => handleFilterChange("english")}
                         />
-                        <span className="font-black text-gray-700 group-hover:text-blue-600 transition-colors text-sm md:text-lg">English</span>
+                        <span className="font-black text-gray-700 group-hover:text-primary transition-colors text-sm md:text-lg">English</span>
                     </label>
 
                     <label className="flex items-center gap-3 cursor-pointer group">
                         <input
                             type="checkbox"
-                            className="w-5 h-5 md:w-6 md:h-6 rounded border-gray-200 text-blue-600 focus:ring-blue-500"
+                            className="w-5 h-5 md:w-6 md:h-6 rounded border-gray-200 text-primary focus:ring-primary"
                             onChange={() => handleFilterChange("hindi")}
                         />
-                        <span className="font-black text-gray-700 group-hover:text-blue-600 transition-colors text-sm md:text-lg">Hindi</span>
+                        <span className="font-black text-gray-700 group-hover:text-primary transition-colors text-sm md:text-lg">Hindi</span>
                     </label>
                 </div>
 
@@ -99,7 +99,7 @@ const VideoPage = () => {
 
                             <p className="text-lg md:text-2xl font-black text-gray-900 mb-3 leading-tight">{video.title}</p>
 
-                            <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 text-[10px] md:text-xs font-black uppercase tracking-widest rounded-full">
+                            <span className="inline-block px-4 py-1.5 bg-orange-50 text-primary text-[10px] md:text-xs font-black uppercase tracking-widest rounded-full">
                                 {video.language}
                             </span>
                         </div>
