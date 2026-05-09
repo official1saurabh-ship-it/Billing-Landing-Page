@@ -103,13 +103,13 @@ const Features = () => {
         ));
 
     return (
-        <div className="flex flex-col min-h-screen bg-white text-gray-900 overflow-x-hidden">
-            <div className="fixed w-full top-0 left-0 z-50 bg-white shadow-sm border-b border-gray-100">
-                <Header1 />
+        <div className="flex flex-col min-h-screen bg-white text-gray-900">
+            <Header1 />
+            <div className="sticky w-full top-0 z-50 bg-white shadow-sm border-b border-gray-100">
                 <Header />
             </div>
 
-            <main className="flex-grow pt-[160px] md:pt-[240px] pb-20 px-4 md:px-8">
+            <main className="flex-grow pt-10 md:pt-16 pb-20 px-4 md:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16 md:mb-24 max-w-4xl mx-auto">
                         <span className="text-primary font-black uppercase tracking-[0.2em] text-xs md:text-sm block mb-4">Core Capabilities</span>

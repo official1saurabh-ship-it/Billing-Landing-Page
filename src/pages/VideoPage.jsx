@@ -35,12 +35,12 @@ const VideoPage = () => {
     return (
         <div className="min-h-screen transition-colors duration-300 mesh-gradient-light text-gray-900 overflow-x-hidden">
 
-            <div className="fixed w-full top-0 left-0 z-50 border-b border-gray-200 bg-white shadow-sm transition-colors duration-300">
-                <Header1 />
+            <Header1 />
+            <div className="sticky w-full top-0 z-50 border-b border-gray-200 bg-white shadow-sm transition-colors duration-300">
                 <Header />
             </div>
-            {/* HEADER */}
-            <div className="pt-[160px] md:pt-[240px] pb-20 px-4 md:px-8">
+            {/* CONTENT */}
+            <div className="pt-10 md:pt-16 pb-20 px-4 md:px-8">
                 <h1 className="text-4xl md:text-7xl font-black text-center mb-8 md:mb-12 leading-tight">
                     Video <span className="text-primary">Library</span> 🎥
                 </h1>

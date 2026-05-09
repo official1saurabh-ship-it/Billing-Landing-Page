@@ -49,15 +49,15 @@ const plans = [
 
 const Pricing = () => {
     return (
-        <div className="flex flex-col min-h-screen bg-white text-gray-900 overflow-x-hidden">
+        <div className="flex flex-col min-h-screen bg-white text-gray-900">
 
-            {/* FIXED HEADER */}
-            <div className="fixed w-full top-0 left-0 z-50 border-b border-gray-200 bg-white shadow-sm">
-                <Header1 />
+            {/* HEADER SECTION */}
+            <Header1 />
+            <div className="sticky w-full top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
                 <Header />
             </div>
 
-            <main className="flex-grow pt-[160px] md:pt-[240px] pb-32 px-4 md:px-8">
+            <main className="flex-grow pt-10 md:pt-16 pb-32 px-4 md:px-8">
                 <div className=" mx-auto">
                     {/* Heading */}
                     <div className="text-center mb-16 md:mb-24">

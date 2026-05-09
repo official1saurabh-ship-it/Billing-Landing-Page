@@ -5,15 +5,14 @@ import Footer from '../components/Footer'
 
 const PrivacyPolicyPage = () => {
     return (
-        <div className="bg-slate-900 text-orange-700 w-full min-h-screen pt-44 ">
+        <div className="bg-slate-900 text-orange-700 w-full min-h-screen">
 
-            <div className='fixed w-full top-0 left-0 z-50'>
-                <Header1 />
+            <Header1 />
+            <div className='sticky w-full top-0 z-50'>
                 <Header />
             </div>
 
-
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 md:px-16 mb-10">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 md:px-16 mb-10 mt-10 md:mt-16">
 
                 {/* Heading */}
                 <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-center">

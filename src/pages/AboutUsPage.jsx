@@ -121,13 +121,13 @@ const AboutUsPage = () => {
 
 
     return (
-        <div className="min-h-screen bg-white text-gray-900 overflow-x-hidden">
-            <div className='fixed w-full top-0 left-0 z-50'>
-                <Header1 />
+        <div className="min-h-screen bg-white text-gray-900">
+            <Header1 />
+            <div className='sticky w-full top-0 z-50'>
                 <Header />
             </div>
 
-            <div className='flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-24 pt-[160px] md:pt-[200px] pb-20 gap-12 lg:gap-24 items-center'>
+            <div className='flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-24 pt-10 md:pt-16 pb-20 gap-12 lg:gap-24 items-center'>
                 <div className='flex flex-col gap-6 lg:w-1/2'>
                     <div className='text-sm md:text-xl bg-gradient-to-r from-amber-500 via-orange-600 to-orange-500 bg-clip-text text-transparent font-black tracking-widest uppercase'>WHERE STRATEGY MEETS TECHNOLOGY</div>
                     <div className="text-4xl md:text-6xl font-black">Our <span className='bg-orange-500 bg-clip-text text-transparent'>Mission</span> </div>

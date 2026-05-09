@@ -131,16 +131,16 @@ const HomePage = () => {
     }
   ];
   return (
-    <div className="w-full overflow-x-hidden bg-white text-gray-900">
+    <div className="w-full bg-white text-gray-900">
 
-      {/* FIXED HEADER */}
-      <div className="fixed w-full top-0 left-0 z-50 border-b border-gray-200 bg-white">
-        <Header1 />
+      {/* HEADER SECTION */}
+      <Header1 />
+      <div className="sticky w-full top-0 z-50 border-b border-gray-200 bg-white">
         <Header />
       </div>
 
       {/* HERO SECTION */}
-      <div className="pt-[140px] md:pt-[180px] lg:pt-[200px] min-h-[60vh] flex flex-col items-center justify-center text-center px-4 md:px-8">
+      <div className="pt-10 md:pt-16 min-h-[60vh] flex flex-col items-center justify-center text-center px-4 md:px-8">
         <h1
           style={{ fontFamily: "Dancing Script" }}
           className="text-7xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.2] md:leading-[1.4] font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-orange-400 bg-clip-text text-transparent"
