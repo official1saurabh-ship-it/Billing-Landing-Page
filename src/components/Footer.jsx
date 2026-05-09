@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4 text-sm text-gray-700">
             <div className="flex gap-3">
               <RiMapPinLine className="text-primary shrink-0" />
-              <span>First floor, H-Block, Anora Kala, Near Goel Tower, Faizabad Road, Lucknow, UP - 226028</span>
+              <span>3rd Floor, Office No-624F/20A, Kotwali Rd, Matiyari, Chinhat, Lucknow, Uttar Pradesh-226028</span>
             </div>
             <div className="flex items-center gap-3">
               <RiMailLine className="text-primary shrink-0" />
@@ -74,7 +74,10 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-3">
               <RiPhoneLine className="text-primary shrink-0" />
-              <a href="tel:+916209688930" className="hover:text-primary transition-colors text-black">+91 6209688930</a>
+              <div className="flex flex-col">
+                <a href="tel:+919044425858" className="hover:text-primary transition-colors text-black">+91-9044425858</a>
+                <a href="tel:+916209688930" className="hover:text-primary transition-colors text-black">+91-6209688930</a>
+              </div>
             </div>
           </div>
           <div className="flex gap-4 mt-2">

@@ -34,25 +34,25 @@ const ContactPage = () => {
 
     const contactDetails = [
         {
-            icon: <RiMapPinLine className="text-primary" size={28} />,
+            icon: <RiMapPinLine className="text-orange-500" size={28} />,
             title: "Our Location",
-            content: "Office No. 624F/20A, On Third Floor,Kanchanpur Matiyari, Kotwali Road,Near Matiyari Chauraha,Chinhat, Lucknow, U.P. – 226028",
+            content: "3rd Floor, Office No-624F/20A, Kotwali Rd, Matiyari, Chinhat, Lucknow, Uttar Pradesh-226028",
             link: "https://goo.gl/maps/placeholder"
         },
         {
-            icon: <RiPhoneLine className="text-primary" size={28} />,
+            icon: <RiPhoneLine className="text-orange-500" size={28} />,
             title: "Phone Number",
-            content: "+91 6209688930",
-            link: "tel:+916209688930"
+            content: "+91-9044425858, +91-6209688930",
+            link: "tel:+919044425858"
         },
         {
-            icon: <RiMailLine className="text-primary" size={28} />,
+            icon: <RiMailLine className="text-orange-500" size={28} />,
             title: "Email Address",
             content: "Info@Biosoftech.com",
             link: "mailto:Info@Biosoftech.com"
         },
         {
-            icon: <RiTimeLine className="text-primary" size={28} />,
+            icon: <RiTimeLine className="text-orange-500" size={28} />,
             title: "Working Hours",
             content: "Mon - Sat: 09:00 AM - 07:00 PM",
             link: null
@@ -69,12 +69,12 @@ const ContactPage = () => {
             </div>
 
             <main className="flex-grow pt-[160px] md:pt-[240px] pb-20 md:pb-32 px-4 md:px-8">
-                <div className="max-w-7xl mx-auto">
+                <div className=" mx-auto">
 
                     {/* Heading Section */}
                     <div className="text-center mb-16 md:mb-24">
-                        <span className="text-primary font-black uppercase tracking-[0.2em] text-xs md:text-sm block mb-4">Connect With Us</span>
-                        <h1 className="text-4xl md:text-7xl font-black mb-6 leading-tight">Let's Start a <span className="text-primary">Conversation</span></h1>
+                        <span className="text-orange-500 font-black uppercase tracking-[0.2em] text-xs md:text-sm block mb-4">Connect With Us</span>
+                        <h1 className="text-4xl md:text-7xl font-black mb-6 leading-tight">Let's Start a <span className="text-orange-500">Conversation</span></h1>
                         <p className="text-lg md:text-2xl opacity-80 max-w-3xl mx-auto leading-relaxed text-gray-600 font-medium">
                             Have a question about our enterprise solutions? Our team of experts is ready to help you navigate your digital transformation.
                         </p>
@@ -94,7 +94,7 @@ const ContactPage = () => {
                                             {detail.title}
                                         </h3>
                                         {detail.link ? (
-                                            <a href={detail.link} target="_blank" rel="noreferrer" className="text-sm md:text-base opacity-70 font-semibold hover:text-primary transition-colors break-words text-gray-700">
+                                            <a href={detail.link} target="_blank" rel="noreferrer" className="text-sm md:text-base opacity-70 font-semibold hover:text-orange-500 transition-colors break-words text-gray-700 whitespace-pre-line">
                                                 {detail.content}
                                             </a>
                                         ) : (
@@ -109,7 +109,7 @@ const ContactPage = () => {
                                 <h3 className="text-xl md:text-2xl font-black mb-6 text-gray-900">Follow Our Journey</h3>
                                 <div className="flex gap-3 md:gap-4 flex-wrap">
                                     {[RiFacebookBoxLine, RiInstagramLine, RiLinkedinLine, RiTwitterFill].map((Icon, i) => (
-                                        <a key={i} href="#" className="w-12 h-12 md:w-14 md:h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                                        <a key={i} href="#" className="w-12 h-12 md:w-14 md:h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-gray-600 hover:bg-orange-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
                                             <Icon size={24} />
                                         </a>
                                     ))}
@@ -131,7 +131,7 @@ const ContactPage = () => {
                                             value={formData.name}
                                             onChange={handleChange}
                                             placeholder="John Doe"
-                                            className="w-full p-4 md:p-5 rounded-xl md:rounded-2xl border border-gray-100 outline-none transition-all duration-300 font-bold bg-gray-50 focus:border-primary focus:bg-white text-gray-900 text-sm md:text-base"
+                                            className="w-full p-4 md:p-5 rounded-xl md:rounded-2xl border border-gray-100 outline-none transition-all duration-300 font-bold bg-gray-50 focus:border-orange-500 focus:bg-white text-gray-900 text-sm md:text-base"
                                         />
                                     </div>
                                     <div className="space-y-2">
@@ -143,7 +143,7 @@ const ContactPage = () => {
                                             value={formData.email}
                                             onChange={handleChange}
                                             placeholder="john@example.com"
-                                            className="w-full p-4 md:p-5 rounded-xl md:rounded-2xl border border-gray-100 outline-none transition-all duration-300 font-bold bg-gray-50 focus:border-primary focus:bg-white text-gray-900 text-sm md:text-base"
+                                            className="w-full p-4 md:p-5 rounded-xl md:rounded-2xl border border-gray-100 outline-none transition-all duration-300 font-bold bg-gray-50 focus:border-orange-500 focus:bg-white text-gray-900 text-sm md:text-base"
                                         />
                                     </div>
                                 </div>
@@ -156,7 +156,7 @@ const ContactPage = () => {
                                         value={formData.subject}
                                         onChange={handleChange}
                                         placeholder="How can we help?"
-                                        className="w-full p-4 md:p-5 rounded-xl md:rounded-2xl border border-gray-100 outline-none transition-all duration-300 font-bold bg-gray-50 focus:border-primary focus:bg-white text-gray-900 text-sm md:text-base"
+                                        className="w-full p-4 md:p-5 rounded-xl md:rounded-2xl border border-gray-100 outline-none transition-all duration-300 font-bold bg-gray-50 focus:border-orange-500 focus:bg-white text-gray-900 text-sm md:text-base"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -168,10 +168,10 @@ const ContactPage = () => {
                                         value={formData.message}
                                         onChange={handleChange}
                                         placeholder="Tell us about your project or inquiry..."
-                                        className="w-full p-4 md:p-5 rounded-xl md:rounded-2xl border border-gray-100 outline-none transition-all duration-300 font-bold resize-none bg-gray-50 focus:border-primary focus:bg-white text-gray-900 text-sm md:text-base"
+                                        className="w-full p-4 md:p-5 rounded-xl md:rounded-2xl border border-gray-100 outline-none transition-all duration-300 font-bold resize-none bg-gray-50 focus:border-orange-500 focus:bg-white text-gray-900 text-sm md:text-base"
                                     />
                                 </div>
-                                <button type="submit" className="w-full py-4 md:py-5 bg-primary hover:bg-orange-700 text-white rounded-xl md:rounded-2xl font-black text-lg md:text-xl flex items-center justify-center gap-3 transition-all duration-300 shadow-xl shadow-orange-500/30 transform hover:-translate-y-1 active:scale-95">
+                                <button type="submit" className="w-full py-4 md:py-5 bg-orange-500 hover:bg-orange-700 text-white rounded-xl md:rounded-2xl font-black text-lg md:text-xl flex items-center justify-center gap-3 transition-all duration-300 shadow-xl shadow-orange-500/30 transform hover:-translate-y-1 active:scale-95">
                                     Send Message
                                     <RiSendPlaneFill size={24} />
                                 </button>
@@ -183,7 +183,7 @@ const ContactPage = () => {
                     {/* Map Section */}
                     <div className="mt-16 md:mt-24 rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-gray-100 h-[350px] md:h-[500px] shadow-2xl relative group bg-gray-50">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.825227181691!2d81.0456209!3d26.8773243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be293f0b24013%3A0xf6f74a00b0d367f0!2sAnora%20Kala%2C%20Faizabad%20Road%2C%20Lucknow!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.5624!2d81.0456!3d26.8889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be26666666667%3A0x0!2sOffice%20No.%20624F%2F20A%2C%20Kotwali%20Road%2C%20Matiyari%2C%20Chinhat%2C%20Lucknow%2C%20Uttar%20Pradesh%20226028!5e0!3m2!1sen!2sin!4v1715234567890!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}

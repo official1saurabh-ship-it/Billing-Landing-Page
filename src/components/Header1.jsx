@@ -6,7 +6,7 @@ const Header1 = () => {
     <div className="flex flex-col sm:flex-row justify-between items-center px-4 md:px-[5vw] gap-2 py-2 text-[10px] sm:text-xs md:text-sm bg-gray-50 border-b border-gray-200 text-gray-600">
       <div className="flex items-center cursor-pointer px-2 py-1 transition-all duration-300 font-bold hover:text-primary">
         <RiPhoneFill size={14} className="mr-1.5 sm:mr-2" />
-        <span>+91 8115561727</span>
+        <span>+91-9044425858</span>
       </div>
 
       <div className="flex items-center gap-3 sm:gap-4 flex-wrap justify-center">

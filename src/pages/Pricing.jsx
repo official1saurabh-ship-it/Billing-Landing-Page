@@ -58,11 +58,11 @@ const Pricing = () => {
             </div>
 
             <main className="flex-grow pt-[160px] md:pt-[240px] pb-32 px-4 md:px-8">
-                <div className="max-w-7xl mx-auto">
+                <div className=" mx-auto">
                     {/* Heading */}
                     <div className="text-center mb-16 md:mb-24">
                         <span className="text-primary font-black uppercase tracking-[0.2em] text-xs md:text-sm block mb-4">Pricing Plans</span>
-                        <h1 className="text-4xl md:text-7xl font-black mb-6 text-gray-900 leading-tight">Choose Your <span className="text-primary">Perfect Plan</span></h1>
+                        <h1 className="text-4xl md:text-7xl font-black mb-6 text-gray-900 leading-tight">Choose Your <span className="text-orange-500">Perfect Plan</span></h1>
                         <p className="text-lg md:text-2xl opacity-80 max-w-3xl mx-auto leading-relaxed text-gray-600 font-medium">
                             Simple pricing. No hidden charges. Scalable solutions for businesses of all sizes.
                         </p>
@@ -82,7 +82,7 @@ const Pricing = () => {
 
                                 {/* Badge */}
                                 {plan.highlight && (
-                                    <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white px-6 md:px-8 py-2 text-[10px] md:text-sm font-black rounded-full shadow-lg uppercase tracking-widest whitespace-nowrap">
+                                    <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-orange-500 text-white px-6 md:px-8 py-2 text-[10px] md:text-sm font-black rounded-full shadow-lg uppercase tracking-widest whitespace-nowrap">
                                         Most Popular
                                     </div>
                                 )}
@@ -122,7 +122,7 @@ const Pricing = () => {
                                     onClick={() => window.location.href = '/contact'}
                                     className={`w-full py-4 md:py-5 rounded-2xl md:rounded-3xl font-black text-lg md:text-xl transition-all duration-300 transform hover:translate-y-[-4px] active:scale-95
                                         ${plan.highlight
-                                            ? "bg-primary hover:bg-orange-700 text-white shadow-xl shadow-orange-500/40"
+                                            ? "bg-white hover:bg-orange-700 text-black shadow-xl shadow-orange-500/40"
                                             : "bg-gray-100 hover:bg-gray-200 text-gray-900"
                                         }`}
                                 >
