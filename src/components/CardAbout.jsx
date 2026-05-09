@@ -8,7 +8,7 @@ const CardAbout = ({ comment, name, paragraph }) => {
                 <img src={comment} alt={name} className="w-full h-full object-contain" />
             </div>
             <div className='text-gray-900  font-black text-xs md:text-sm uppercase tracking-wider text-center'>{name}</div>
-            {paragraph && <div className="text-gray-500 dark:text-gray-400 text-[10px] md:text-xs text-center mt-1">{paragraph}</div>}
+            {paragraph && <div className="text-gray-500 text-[10px] md:text-xs text-center mt-1">{paragraph}</div>}
         </div>
     )
 }
