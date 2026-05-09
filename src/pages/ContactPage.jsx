@@ -109,7 +109,7 @@ const ContactPage = () => {
                                 <h3 className="text-xl md:text-2xl font-black mb-6 text-gray-900">Follow Our Journey</h3>
                                 <div className="flex gap-3 md:gap-4 flex-wrap">
                                     {[RiFacebookBoxLine, RiInstagramLine, RiLinkedinLine, RiTwitterFill].map((Icon, i) => (
-                                        <a key={i} href="#" className="w-12 h-12 md:w-14 md:h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-gray-600 hover:bg-orange-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                                        <a key={i} href="#" className="w-12 h-12 md:w-14 md:h-14 bg-orange-500 rounded-2xl flex items-center justify-center text-white hover:bg-orange-700 transition-all duration-300 transform hover:-translate-y-1">
                                             <Icon size={24} />
                                         </a>
                                     ))}

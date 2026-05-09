@@ -280,7 +280,7 @@ const QuoteForm = () => {
                     <div className="md:col-span-2 flex justify-center md:justify-end mt-4">
                         <button
                             type="submit"
-                            className="group relative inline-flex items-center justify-center w-full md:w-auto px-12 py-3.5 md:py-4 font-bold text-white transition-all duration-200 bg-orange-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 hover:bg-orange-600 shadow-xl active:scale-95"
+                            className="group relative inline-flex items-center justify-center w-full md:w-auto px-12 py-3.5 md:py-4 font-bold text-white transition-all duration-200 bg-orange-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 hover:bg-orange-700 shadow-xl active:scale-95"
                         >
                             Send Request
                             <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

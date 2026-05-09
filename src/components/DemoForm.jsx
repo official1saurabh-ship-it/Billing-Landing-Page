@@ -182,7 +182,7 @@ const DemoForm = ({ onClose }) => {
                         {/* Button */}
                         <button
                             type="submit"
-                            className="mt-4 bg-orange-500 text-white py-4 rounded-xl font-black text-lg shadow-xl shadow-orange-500/20 hover:bg-orange-600 hover:scale-[1.02] active:scale-[0.98] transition-all uppercase tracking-widest"
+                            className="mt-4 bg-orange-500 text-white py-4 rounded-xl font-black text-lg shadow-xl shadow-orange-500/20 hover:bg-orange-700 hover:scale-[1.02] active:scale-[0.98] transition-all uppercase tracking-widest"
                         >
                             Submit Request
                         </button>

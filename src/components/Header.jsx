@@ -25,7 +25,7 @@ const Header = () => {
           <img
             src={biosoftech}
             alt="Biosoftech Logo"
-            className="h-20 md:h-14 lg:h-16 w-40"
+            className="h-10 md:h-14 lg:h-10 w-30 md:w-40 lg:w-30 object-contain transition-all duration-300 group-hover:scale-110"
           />
         </Link>
 

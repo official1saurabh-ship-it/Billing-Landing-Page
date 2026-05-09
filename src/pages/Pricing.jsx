@@ -69,65 +69,66 @@ const Pricing = () => {
                     </div>
 
                     {/* Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-20">
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
-                                className={`relative rounded-[3rem] p-8 md:p-12 border transition-all duration-500 hover:scale-[1.02] flex flex-col min-h-[600px] md:min-h-[700px]
+                                className={`relative rounded-3xl p-6 md:p-8 border transition-all duration-500 flex flex-col min-h-[500px] md:min-h-[550px] group hover:-translate-y-6 hover:z-50
                                     ${plan.highlight
-                                        ? 'bg-white border-primary shadow-2xl shadow-orange-500/20 z-10 lg:scale-105'
-                                        : 'bg-white border-gray-100 shadow-xl shadow-gray-200/50'
+                                        ? 'bg-white border-primary shadow-2xl shadow-orange-500/20 z-10 lg:scale-105 hover:scale-[1.12] hover:shadow-orange-500/50'
+                                        : 'bg-white border-gray-100 shadow-xl shadow-gray-200/50 hover:scale-[1.1] hover:shadow-2xl hover:shadow-orange-500/30 hover:border-orange-500/40'
                                     }`}
                             >
 
                                 {/* Badge */}
                                 {plan.highlight && (
-                                    <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-orange-500 text-white px-6 md:px-8 py-2 text-[10px] md:text-sm font-black rounded-full shadow-lg uppercase tracking-widest whitespace-nowrap">
+                                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-orange-500 text-white px-4 md:px-6 py-1.5 text-[10px] md:text-xs font-black rounded-full shadow-lg uppercase tracking-widest whitespace-nowrap">
                                         Most Popular
                                     </div>
                                 )}
 
                                 {/* Title */}
-                                <h2 className="text-3xl md:text-4xl font-black mb-6 text-gray-900">{plan.name}</h2>
+                                <h2 className="text-2xl md:text-3xl font-black mb-4 text-gray-900">{plan.name}</h2>
 
                                 {/* Pricing */}
-                                <div className="mb-8">
-                                    <span className="line-through opacity-50 text-base md:text-lg font-bold text-gray-500">
+                                <div className="mb-6">
+                                    <span className="line-through opacity-50 text-sm md:text-base font-bold text-gray-500">
                                         {plan.oldPrice}
                                     </span>
                                     <div className="flex items-baseline gap-2 flex-wrap">
-                                        <h3 className="text-4xl md:text-6xl font-black text-primary">
+                                        <h3 className="text-3xl md:text-5xl font-black text-primary">
                                             {plan.price}
                                         </h3>
-                                        <span className="opacity-60 text-base md:text-lg font-bold text-gray-600">/ year</span>
+                                        <span className="opacity-60 text-sm md:text-base font-bold text-gray-600">/ year</span>
                                     </div>
                                 </div>
 
-                                <p className="text-lg md:text-xl opacity-70 mb-10 font-medium leading-relaxed text-gray-700">{plan.desc}</p>
+                                <p className="text-base md:text-lg opacity-70 mb-8 font-medium leading-relaxed text-gray-700">{plan.desc}</p>
 
                                 {/* Features */}
-                                <ul className="space-y-4 md:space-y-6 mb-12 flex-grow">
+                                <ul className="space-y-3 md:space-y-4 mb-8 flex-grow">
                                     {plan.features.map((feature, i) => (
-                                        <li key={i} className="flex items-start gap-4">
-                                            <div className="mt-1 w-6 h-6 md:w-7 md:h-7 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <li key={i} className="flex items-start gap-3">
+                                            <div className="mt-1 w-5 h-5 md:w-6 md:h-6 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                             </div>
-                                            <span className="text-base md:text-lg opacity-90 font-medium text-gray-700">{feature}</span>
+                                            <span className="text-sm md:text-base opacity-90 font-medium text-gray-700">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
 
                                 {/* Button */}
-                                <button
-                                    onClick={() => window.location.href = '/contact'}
-                                    className={`w-full py-4 md:py-5 rounded-2xl md:rounded-3xl font-black text-lg md:text-xl transition-all duration-300 transform hover:translate-y-[-4px] active:scale-95
+                                <a href="https://billing.biosoftech.in/register">
+                                    <button
+                                        className={`w-full py-3 md:py-4 rounded-xl md:rounded-2xl font-black text-base md:text-lg transition-all duration-300 transform hover:translate-y-[-4px] active:scale-95
                                         ${plan.highlight
-                                            ? "bg-white hover:bg-orange-700 text-black shadow-xl shadow-orange-500/40"
-                                            : "bg-gray-100 hover:bg-gray-200 text-gray-900"
-                                        }`}
-                                >
-                                    Get Started
-                                </button>
+                                                ? "bg-orange-500 hover:bg-orange-700 text-white shadow-xl shadow-orange-500/40"
+                                                : "bg-orange-500 hover:bg-orange-700 text-white shadow-lg"
+                                            }`}
+                                    >
+                                        Get Started
+                                    </button>
+                                </a>
                             </div>
                         ))}
                     </div>

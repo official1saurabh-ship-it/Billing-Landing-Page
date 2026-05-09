@@ -156,13 +156,13 @@ const HomePage = () => {
         </h2>
 
         <div className="flex gap-4 mt-8 flex-wrap justify-center px-4">
-          <button onClick={() => setActiveForm('login')} className="flex-1 sm:flex-none bg-orange-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-orange-600 transition-colors">
+          <button onClick={() => setActiveForm('login')} className="flex-1 sm:flex-none bg-orange-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-orange-700 transition-colors">
             Sign Up - It's Free
           </button>
-          <button onClick={() => setActiveForm('demo')} className="flex-1 sm:flex-none bg-orange-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-orange-600 transition-colors">
+          <button onClick={() => setActiveForm('demo')} className="flex-1 sm:flex-none bg-orange-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-orange-700 transition-colors">
             Request For Demo
           </button>
-          <button onClick={() => navigate("video")} className="w-full sm:w-auto bg-orange-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-orange-600 transition-colors">
+          <button onClick={() => navigate("video")} className="w-full sm:w-auto bg-orange-500 text-white px-6 py-3 rounded-md shadow-md text-sm md:text-base hover:bg-orange-700 transition-colors">
             Video Demonstration
           </button>
         </div>

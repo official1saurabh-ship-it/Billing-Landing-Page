@@ -192,13 +192,12 @@ const Login = ({ onClose }) => {
                         </p>
 
                         {/* Button */}
-                        <button 
-                            type="submit" 
-                            className="mt-2 bg-orange-500 text-white py-4 rounded-xl font-black text-lg shadow-xl shadow-orange-500/20 hover:bg-orange-600 hover:scale-[1.02] active:scale-[0.98] transition-all uppercase tracking-widest"
+                        <button
+                            type="submit"
+                            className="mt-2 bg-orange-500 text-white py-4 rounded-xl font-black text-lg shadow-xl shadow-orange-500/20 hover:bg-orange-700 hover:scale-[1.02] active:scale-[0.98] transition-all uppercase tracking-widest"
                         >
                             Create Account
-                        </button>
-                    </div>
+                        </button>                    </div>
                 </div>
             </form>
         </div>
