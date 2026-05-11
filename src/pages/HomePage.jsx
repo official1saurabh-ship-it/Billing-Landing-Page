@@ -143,9 +143,9 @@ const HomePage = () => {
       <div className="pt-10 md:pt-16 min-h-[60vh] flex flex-col items-center justify-center text-center px-4 md:px-8">
         <h1
           style={{ fontFamily: "Fjalla One" }}
-          className="text-9xl sm:text-5xl md:text-7xl lg:text-9xl leading-[1.2] md:leading-[1.4] font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-orange-400 bg-clip-text text-transparent"
+          className="text-9xl sm:text-5xl md:text-7xl lg:text-9xl leading-[1.2] md:leading-[1.4] font-bold text-black"
         >
-          All in One Billing Solutions
+          All in One <span className="text-orange-500">Billing</span>  Solutions
         </h1>
 
         <h2
