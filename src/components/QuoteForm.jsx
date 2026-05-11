@@ -64,7 +64,7 @@ const QuoteForm = () => {
         console.group("🚀 Quote Form Submission");
         console.log("Submission Time:", new Date().toLocaleString());
         console.log("Form Data Snapshot:", formData);
-        
+
         setIsSubmitted(true);
         const isValid = validate();
         console.log("Is Form Valid?:", isValid ? "✅ YES" : "❌ NO");
@@ -97,7 +97,7 @@ const QuoteForm = () => {
                     <h2 className="text-2xl md:text-4xl font-extrabold text-black mb-2 leading-tight text-center">
                         Get Your Custom Quotation
                     </h2>
-                    <p className="text-orange-500 text-base md:text-lg font-medium opacity-90 text-center">
+                    <p className="text-black text-base md:text-lg font-medium opacity-90 text-center">
                         Please fill out the details below and our team will get back to you within 24 hours.
                     </p>
                     <div className="h-1.5 w-20 bg-orange-500 mt-4 rounded-full mx-auto"></div>
@@ -106,15 +106,15 @@ const QuoteForm = () => {
                 <form onSubmit={handleSubmit} noValidate className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 md:gap-y-6">
                     {/* Your Name */}
                     <div className="flex flex-col group">
-                        <label className="text-xs md:text-sm font-bold text-orange-600 mb-2 transition-colors">
-                            Your Name <span className="text-red-500">*</span>
+                        <label className="text-xs md:text-sm font-bold text-black mb-2 transition-colors">
+                            Your Name *
                         </label>
                         <input
                             type="text"
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            className={`w-full bg-orange-50/50 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-400 text-sm md:text-base ${errors.name ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
+                            className={`w-full bg-gray-200 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-bg-gray-200 text-sm md:text-base ${errors.name ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
                             placeholder="John Doe"
                         />
                         {errors.name && <span className="text-red-500 text-xs mt-1 font-semibold">{errors.name}</span>}
@@ -122,15 +122,15 @@ const QuoteForm = () => {
 
                     {/* Email Address */}
                     <div className="flex flex-col group">
-                        <label className="text-xs md:text-sm font-bold text-orange-600 mb-2 transition-colors">
-                            Email Address <span className="text-red-500">*</span>
+                        <label className="text-xs md:text-sm font-bold text-black mb-2 transition-colors">
+                            Email Address *
                         </label>
                         <input
                             type="email"
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            className={`w-full bg-orange-50/50 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-400 text-sm md:text-base ${errors.email ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
+                            className={`w-full bg-gray-200 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-bg-gray-200 text-sm md:text-base ${errors.email ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
                             placeholder="john@example.com"
                         />
                         {errors.email && <span className="text-red-500 text-xs mt-1 font-semibold">{errors.email}</span>}
@@ -138,15 +138,15 @@ const QuoteForm = () => {
 
                     {/* Contact Number */}
                     <div className="flex flex-col group">
-                        <label className="text-xs md:text-sm font-bold text-orange-600 mb-2 transition-colors">
-                            Contact Number <span className="text-red-500">*</span>
+                        <label className="text-xs md:text-sm font-bold text-black mb-2 transition-colors">
+                            Contact Number *
                         </label>
                         <input
                             type="tel"
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
-                            className={`w-full bg-orange-50/50 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-400 text-sm md:text-base ${errors.phone ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
+                            className={`w-full bg-gray-200 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-bg-gray-200 text-sm md:text-base ${errors.phone ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
                             placeholder="+1 234 567 890"
                         />
                         {errors.phone && <span className="text-red-500 text-xs mt-1 font-semibold">{errors.phone}</span>}
@@ -154,15 +154,15 @@ const QuoteForm = () => {
 
                     {/* Country */}
                     <div className="flex flex-col group">
-                        <label className="text-xs md:text-sm font-bold text-orange-600 mb-2 transition-colors">
-                            Country <span className="text-red-500">*</span>
+                        <label className="text-xs md:text-sm font-bold text-black mb-2 transition-colors">
+                            Country *
                         </label>
                         <div className="relative">
                             <select
                                 name="country"
                                 value={formData.country}
                                 onChange={handleChange}
-                                className={`w-full bg-orange-50/50 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white cursor-pointer appearance-none text-sm md:text-base ${errors.country ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
+                                className={`w-full bg-gray-200 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white cursor-pointer appearance-none text-sm md:text-base ${errors.country ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
                             >
                                 <option value="">Select Country</option>
                                 <option value="india">India</option>
@@ -180,7 +180,7 @@ const QuoteForm = () => {
 
                     {/* Company Name */}
                     <div className="flex flex-col group">
-                        <label className="text-xs md:text-sm font-bold text-orange-600 mb-2 transition-colors">
+                        <label className="text-xs md:text-sm font-bold text-black mb-2 transition-colors">
                             Company Name
                         </label>
                         <input
@@ -188,22 +188,22 @@ const QuoteForm = () => {
                             name="company"
                             value={formData.company}
                             onChange={handleChange}
-                            className="w-full bg-orange-50/50 border-2 border-orange-100 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:border-orange-500 focus:bg-white placeholder:text-gray-400 text-sm md:text-base"
+                            className="w-full bg-gray-200 border-2 border-orange-100 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:border-orange-500 focus:bg-white placeholder:text-gray-bg-gray-200 text-sm md:text-base"
                             placeholder="Your Company Ltd"
                         />
                     </div>
 
                     {/* Messaging App */}
                     <div className="flex flex-col group">
-                        <label className="text-xs md:text-sm font-bold text-orange-600 mb-2 transition-colors">
-                            Preferred Messaging App <span className="text-red-500">*</span>
+                        <label className="text-xs md:text-sm font-bold text-black mb-2 transition-colors">
+                            Preferred Messaging App *
                         </label>
                         <div className="relative">
                             <select
                                 name="messagingApp"
                                 value={formData.messagingApp}
                                 onChange={handleChange}
-                                className={`w-full bg-orange-50/50 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white cursor-pointer appearance-none text-sm md:text-base ${errors.messagingApp ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
+                                className={`w-full bg-gray-200 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white cursor-pointer appearance-none text-sm md:text-base ${errors.messagingApp ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
                             >
                                 <option value="">Select App</option>
                                 <option value="whatsapp">WhatsApp</option>
@@ -220,15 +220,15 @@ const QuoteForm = () => {
 
                     {/* Messenger ID */}
                     <div className="flex flex-col group">
-                        <label className="text-xs md:text-sm font-bold text-orange-600 mb-2 transition-colors">
-                            Messenger ID / Number <span className="text-red-500">*</span>
+                        <label className="text-xs md:text-sm font-bold text-black mb-2 transition-colors">
+                            Messenger ID / Number *
                         </label>
                         <input
                             type="text"
                             name="messangerId"
                             value={formData.messangerId}
                             onChange={handleChange}
-                            className={`w-full bg-orange-50/50 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-400 text-sm md:text-base ${errors.messangerId ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
+                            className={`w-full bg-gray-200 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-bg-gray-200 text-sm md:text-base ${errors.messangerId ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
                             placeholder="Username or ID"
                         />
                         {errors.messangerId && <span className="text-red-500 text-xs mt-1 font-semibold">{errors.messangerId}</span>}
@@ -236,15 +236,15 @@ const QuoteForm = () => {
 
                     {/* Software Feature */}
                     <div className="flex flex-col group">
-                        <label className="text-xs md:text-sm font-bold text-orange-600 mb-2 transition-colors">
-                            Interested Software Feature <span className="text-red-500">*</span>
+                        <label className="text-xs md:text-sm font-bold text-black mb-2 transition-colors">
+                            Interested Software Feature *
                         </label>
                         <div className="relative">
                             <select
                                 name="feature"
                                 value={formData.feature}
                                 onChange={handleChange}
-                                className={`w-full bg-orange-50/50 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white cursor-pointer appearance-none text-sm md:text-base ${errors.feature ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
+                                className={`w-full bg-gray-200 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white cursor-pointer appearance-none text-sm md:text-base ${errors.feature ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
                             >
                                 <option value="">Select Feature</option>
                                 <option value="erp">ERP System</option>
@@ -262,15 +262,15 @@ const QuoteForm = () => {
 
                     {/* Project Description */}
                     <div className="flex flex-col md:col-span-2 group">
-                        <label className="text-xs md:text-sm font-bold text-orange-600 mb-2 transition-colors">
-                            Project Description / Additional Information <span className="text-red-500">*</span>
+                        <label className="text-xs md:text-sm font-bold text-black mb-2 transition-colors">
+                            Project Description / Additional Information *
                         </label>
                         <textarea
                             name="description"
                             value={formData.description}
                             onChange={handleChange}
                             rows="5"
-                            className={`w-full bg-orange-50/50 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-400 resize-none text-sm md:text-base ${errors.description ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
+                            className={`w-full bg-gray-200 border-2 rounded-xl px-4 py-2.5 md:py-3 text-gray-900 outline-none transition-all focus:bg-white placeholder:text-gray-bg-gray-200 resize-none text-sm md:text-base ${errors.description ? 'border-red-500' : 'border-orange-100 focus:border-orange-500'}`}
                             placeholder="Tell us about your project requirements and goals..."
                         ></textarea>
                         {errors.description && <span className="text-red-500 text-xs mt-1 font-semibold">{errors.description}</span>}
@@ -280,7 +280,7 @@ const QuoteForm = () => {
                     <div className="md:col-span-2 flex justify-center md:justify-end mt-4">
                         <button
                             type="submit"
-                            className="group relative inline-flex items-center justify-center w-full md:w-auto px-12 py-3.5 md:py-4 font-bold text-white transition-all duration-200 bg-orange-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 hover:bg-orange-700 shadow-xl active:scale-95"
+                            className="group relative inline-flex items-center justify-center w-full md:w-auto px-12 py-3.5 md:py-4 font-bold text-white transition-all duration-200 bg-black rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 hover:bg-orange-700 shadow-xl active:scale-95"
                         >
                             Send Request
                             <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
