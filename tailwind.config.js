@@ -7,6 +7,9 @@ export default {
       },
       fontFamily: {
         dancing: ["Dancing Script", "cursive"],
+      
+        fjalla: ["Fjalla One", "sans-serif"],
+         bodoni:[ "Bodoni Moda", "serif"]
       },
     },
   },

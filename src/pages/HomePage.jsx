@@ -142,14 +142,14 @@ const HomePage = () => {
       {/* HERO SECTION */}
       <div className="pt-10 md:pt-16 min-h-[60vh] flex flex-col items-center justify-center text-center px-4 md:px-8">
         <h1
-          style={{ fontFamily: "Dancing Script" }}
-          className="text-7xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.2] md:leading-[1.4] font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-orange-400 bg-clip-text text-transparent"
+          style={{ fontFamily: "Fjalla One" }}
+          className="text-9xl sm:text-5xl md:text-7xl lg:text-9xl leading-[1.2] md:leading-[1.4] font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-orange-400 bg-clip-text text-transparent"
         >
           All in One Billing Solutions
         </h1>
 
         <h2
-          style={{ fontFamily: "Dancing Script" }}
+          style={{ fontFamily: "Bodoni Moda" }}
           className="text-2xl md:text-4xl lg:text-5xl text-primary mt-6 md:mt-8"
         >
           Easy, Efficient & Cost-effective
