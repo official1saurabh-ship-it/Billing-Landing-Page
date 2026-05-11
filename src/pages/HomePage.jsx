@@ -208,8 +208,8 @@ const HomePage = () => {
 
       {/* QUOTE BANNER */}
       <div className="w-full  mx-auto px-4 mt-12 mb-2" >
-        <div className="w-full text-xl md:text-3xl lg:text-4xl text-center py-10 px-6 rounded-3xl shadow-xl bg-white border border-gray-100 bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 bg-clip-text text-transparent font-black leading-relaxed">
-          The world is moving very fast day by day and we should also take our business forward by using advance software like <span className="text-black">Billing Mitra</span> “All in One Software Solution”
+        <div className="w-full text-xl md:text-3xl lg:text-4xl text-center py-10 px-6 rounded-3xl shadow-xl bg-white border border-gray-100 text-gray-950 font-black leading-relaxed">
+          The world is moving very fast day by day and we should also take our business forward by using advance software like <span className="bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 bg-clip-text text-transparent">Billing Mitra</span> “All in One Software Solution”
         </div>
       </div >
 
